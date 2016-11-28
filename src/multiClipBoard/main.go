@@ -14,9 +14,11 @@ func main() {
 	if len(os.Args) == 1 {
 		// вывод справки
 		fmt.Println(`Ипользование:
-		mcb save <ключевое слово>  сохраняет буфер по ключевому слову
-		mcb <ключевое слово>       загружает данные по ключевому слову в буфер
-		mcb list                   загружает все данные ключевых слов в буфер`)
+		mcb save <ключевое слово>	сохраняет буфер по ключевому слову
+		mcb <ключевое слово>		загружает данные по ключевому слову в буфер
+		mcb list			view all key-words
+		mcb del <ключевое слово>	удаляет данные из списка
+		mcb del				удаляет весь список и все данные`)
 	} else {
 		// проверка наличия файла
 		// открываем с опциями добавления, записи и
@@ -38,11 +40,9 @@ func main() {
 				panic(err)
 			}
 		} else if len(os.Args) == 2 {
-			// открываем файл с сохранненым json
-			file, _ := os.Open("/tmp/mcb")
-			defer file.Close()
 			// считываем файл по строкам
 			// записываем в мапу
+			file, _ := os.Open("/tmp/mcb")
 			scanner := bufio.NewScanner(file)
 			mapStr := make(map[string]string)
 			for scanner.Scan() {
@@ -56,14 +56,22 @@ func main() {
 				for x, _ := range mapStr {
 					fmt.Println("\t" + x)
 				}
+			} else if os.Args[1] == "del" {
+				var strDel string
+				fmt.Println("Удалить все?\tYes/No")
+				fmt.Scan(&strDel)
+				if strDel == "Yes" {
+					os.Remove("/tmp/mcb")
+				} else if strDel == "No" {
+					fmt.Println("How key string?")
+				} else {
+					fmt.Println("No key")
+				}
 			} else {
 				// вставка в буфер по ключу
 				for x, y := range mapStr {
-					switch {
-					case os.Args[1] == x:
+					if os.Args[1] == x {
 						clipboard.WriteAll(y)
-					default:
-						fmt.Println("Такого ключа нет")
 					}
 				}
 			}
