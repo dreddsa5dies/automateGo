@@ -16,9 +16,9 @@ func main() {
 		fmt.Println(`Ипользование:
 		mcb save <ключевое слово>	сохраняет буфер по ключевому слову
 		mcb <ключевое слово>		загружает данные по ключевому слову в буфер
-		mcb list			view all key-words
-		mcb del <ключевое слово>	удаляет данные из списка
-		mcb del				удаляет весь список и все данные`)
+		mcb list			просмотр всех ключей
+		mcb del				удаляет весь список и все данные
+		mcb del и далее <ключевое слово>	удаляет по ключевому слову`)
 	} else {
 		// проверка наличия файла
 		// открываем с опциями добавления, записи и
@@ -56,16 +56,45 @@ func main() {
 				for x, _ := range mapStr {
 					fmt.Println("\t" + x)
 				}
+				// ветка удаления
 			} else if os.Args[1] == "del" {
 				var strDel string
 				fmt.Println("Удалить все?\tYes/No")
 				fmt.Scan(&strDel)
+				// если удалить все
 				if strDel == "Yes" {
 					os.Remove("/tmp/mcb")
 				} else if strDel == "No" {
-					fmt.Println("How key string?")
+					// TODO добавить изменение файла
+					var keyDel string
+					fmt.Print("Удаление ключевого слова ")
+					fmt.Scan(&keyDel)
+					// открытие файла для изменения
+					mcbFile, _ := os.OpenFile("/tmp/mcb", os.O_WRONLY, 0600)
+					defer mcbFile.Close()
+					// считывание всех данных
+					neWscanner := bufio.NewScanner(mcbFile)
+					mapStrFile := make(map[string]string)
+					for neWscanner.Scan() {
+						p := scanner.Text()
+						err := json.Unmarshal([]byte(p), &mapStrFile)
+						check(err)
+					}
+					for x, _ := range mapStrFile {
+						if x == keyDel {
+							delete(mapStrFile, x)
+						}
+					}
+					mapBas, _ := json.Marshal(mapStrFile)
+					// добавляю символ новой строки
+					newStr1 := "\n"
+					mapBas = append(mapBas, newStr1...)
+					// запись в файл хранения
+					if _, err := mcbFile.Write(mapBas); err != nil {
+						panic(err)
+					}
 				} else {
-					fmt.Println("No key")
+					fmt.Println("Нечего удалять")
 				}
 			} else {
 				// вставка в буфер по ключу
