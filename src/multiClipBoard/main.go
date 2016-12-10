@@ -17,13 +17,13 @@ func main() {
 		mcb save <ключевое слово>	сохраняет буфер по ключевому слову
 		mcb <ключевое слово>		загружает данные по ключевому слову в буфер
 		mcb list			просмотр всех ключей
-		mcb del				удаляет весь список и все данные
-		mcb del и далее <ключевое слово>	удаляет по ключевому слову`)
+		mcb del				удаляет весь список и все данные`)
 	} else {
 		// проверка наличия файла
 		// открываем с опциями добавления, записи и
 		// создания если не существует
 		mcb, _ := os.OpenFile("/tmp/mcb", os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0600)
+		defer mcb.Close()
 
 		mapBase := make(map[string]string)
 		// парсинг флагов
@@ -43,6 +43,7 @@ func main() {
 			// считываем файл по строкам
 			// записываем в мапу
 			file, _ := os.Open("/tmp/mcb")
+			defer file.Close()
 			scanner := bufio.NewScanner(file)
 			mapStr := make(map[string]string)
 			for scanner.Scan() {
@@ -58,44 +59,8 @@ func main() {
 				}
 				// ветка удаления
 			} else if os.Args[1] == "del" {
-				var strDel string
-				fmt.Println("Удалить все?\tYes/No")
-				fmt.Scan(&strDel)
-				// если удалить все
-				if strDel == "Yes" {
-					os.Remove("/tmp/mcb")
-				} else if strDel == "No" {
-					// TODO добавить изменение файла
-					var keyDel string
-					fmt.Print("Удаление ключевого слова ")
-					fmt.Scan(&keyDel)
-					// открытие файла для изменения
-					mcbFile, _ := os.OpenFile("/tmp/mcb", os.O_WRONLY, 0600)
-					defer mcbFile.Close()
-					// считывание всех данных
-					neWscanner := bufio.NewScanner(mcbFile)
-					mapStrFile := make(map[string]string)
-					for neWscanner.Scan() {
-						p := scanner.Text()
-						err := json.Unmarshal([]byte(p), &mapStrFile)
-						check(err)
-					}
-					for x, _ := range mapStrFile {
-						if x == keyDel {
-							delete(mapStrFile, x)
-						}
-					}
-					mapBas, _ := json.Marshal(mapStrFile)
-					// добавляю символ новой строки
-					newStr1 := "\n"
-					mapBas = append(mapBas, newStr1...)
-					// запись в файл хранения
-					if _, err := mcbFile.Write(mapBas); err != nil {
-						panic(err)
-					}
-				} else {
-					fmt.Println("Нечего удалять")
-				}
+				// удалить все
+				os.Remove("/tmp/mcb")
 			} else {
 				// вставка в буфер по ключу
 				for x, y := range mapStr {
