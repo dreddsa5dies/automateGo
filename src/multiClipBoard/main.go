@@ -59,11 +59,8 @@ func main() {
 			} else {
 				// вставка в буфер по ключу
 				for x, y := range mapStr {
-					switch {
-					case os.Args[1] == x:
+					if os.Args[1] == x {
 						clipboard.WriteAll(y)
-					default:
-						fmt.Println("Такого ключа нет")
 					}
 				}
 			}
