@@ -22,17 +22,30 @@ func main() {
 		ADJECTIVE - прилагательное
 		NOUN - существительное
 		VERB - глагол
-		NOUN - наречие
+		ADVERB - наречие
 		Использование:
-		madLib <адрес файла.txt>`)
+		madLib <адрес файла>`)
 	} else if len(os.Args) == 2 {
 		// проверка корректности имени файла и его открытие
 		file, err := ioutil.ReadFile(os.Args[1])
 		check(err)
+		// формируем строку из []byte
 		strFile := string(file)
+		// разбиваем строку на массив слов
+		// однако . относятся к слову (((
 		wordsArr := strings.Split(strFile, " ")
 		for i := 0; i < len(wordsArr); i++ {
-			fmt.Println(wordsArr[i])
+			// кейсы по замене
+			switch {
+			case wordsArr[i] == "ADJECTIVE":
+				fmt.Println("прилагательное")
+			case wordsArr[i] == "NOUN":
+				fmt.Println("существительное")
+			case wordsArr[i] == "VERB":
+				fmt.Println("глагол")
+			case wordsArr[i] == "ADVERB":
+				fmt.Println("наречие")
+			}
 		}
 	}
 }
