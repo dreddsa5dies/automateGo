@@ -49,16 +49,23 @@ func main() {
 			}
 			wordsArr[i] = x
 		}
-		// TODO: добавить точку
+		// добавление потерянной точки
 		for i := 0; i < len(strDot); i++ {
 			for j := 0; j < len(dotEntry); j++ {
 				if strDot[i] == dotEntry[j] {
-					fmt.Println(wordsArr[strDot[i]])
+					wordsArr[strDot[i]] = wordsArr[strDot[i]] + "."
 				}
 			}
 		}
 		// TODO: запись в файл
-		fmt.Println(wordsArr)
+		tmp, _ := os.OpenFile("tmp_"+os.Args[1], os.O_WRONLY|os.O_CREATE, 0600)
+		defer tmp.Close()
+		// []string to []byte
+		stringByte := "\x00" + strings.Join(wordsArr, "\x20\x00") // x20 = space and x00 = null
+		// запись в файл хранения
+		if _, err := tmp.Write([]byte(stringByte)); err != nil {
+			panic(err)
+		}
 	}
 }
 
