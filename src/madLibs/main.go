@@ -12,6 +12,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"strings"
 )
 
 func main() {
@@ -28,7 +29,11 @@ func main() {
 		// проверка корректности имени файла и его открытие
 		file, err := ioutil.ReadFile(os.Args[1])
 		check(err)
-		fmt.Println(string(file))
+		strFile := string(file)
+		wordsArr := strings.Split(strFile, " ")
+		for i := 0; i < len(wordsArr); i++ {
+			fmt.Println(wordsArr[i])
+		}
 	}
 }
 
