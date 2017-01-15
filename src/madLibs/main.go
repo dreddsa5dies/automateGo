@@ -58,6 +58,8 @@ func main() {
 			}
 		}
 		// TODO: запись в файл
+		// только для моего примера
+		// если файл будет большой, то с переносами строк будет все плохо
 		tmp, _ := os.OpenFile("tmp_"+os.Args[1], os.O_WRONLY|os.O_CREATE, 0600)
 		defer tmp.Close()
 		// []string to string
