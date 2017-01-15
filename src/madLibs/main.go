@@ -35,6 +35,10 @@ func main() {
 		// однако . относятся к слову (((
 		wordsArr := strings.Split(strFile, " ")
 		for i := 0; i < len(wordsArr); i++ {
+			// проверка на вхождение в слово точки
+			if strings.Contains(wordsArr[i], ".") {
+				wordsArr[i] = wordsArr[i][:len(wordsArr[i])-1]
+			}
 			// кейсы по замене
 			switch {
 			case wordsArr[i] == "ADJECTIVE":
@@ -47,6 +51,7 @@ func main() {
 				fmt.Println("наречие")
 			}
 		}
+		fmt.Println(wordsArr)
 	}
 }
 
