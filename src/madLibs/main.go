@@ -35,32 +35,28 @@ func main() {
 		// разбиваем строку на массив слов
 		// однако . относятся к слову (((
 		wordsArr := strings.Split(strFile, " ")
+		var strDot, dotEntry []int
 		for i := 0; i < len(wordsArr); i++ {
 			// проверка на вхождение в слово точки
 			if strings.Contains(wordsArr[i], ".") {
+				strDot = append(strDot, i)
 				wordsArr[i] = wordsArr[i][:len(wordsArr[i])-1]
 			}
-			// кейсы по замене
-			switch {
-			case wordsArr[i] == "ADJECTIVE":
-				fmt.Println("Введите имя прилагательное:")
-				s := scan()
-				wordsArr[i] = s
-			case wordsArr[i] == "NOUN":
-				fmt.Println("Введите имя существительное:")
-				s := scan()
-				wordsArr[i] = s
-			case wordsArr[i] == "VERB":
-				fmt.Println("Введите глагол:")
-				s := scan()
-				wordsArr[i] = s
-			case wordsArr[i] == "ADVERB":
-				fmt.Println("Введите наречие:")
-				s := scan()
-				wordsArr[i] = s
+			// замена и контроль точки
+			x, y := reInter(wordsArr[i])
+			if y {
+				dotEntry = append(dotEntry, i)
+			}
+			wordsArr[i] = x
+		}
+		// TODO: добавить точку
+		for i := 0; i < len(strDot); i++ {
+			for j := 0; j < len(dotEntry); j++ {
+				if strDot[i] == dotEntry[j] {
+					fmt.Println(wordsArr[strDot[i]])
+				}
 			}
 		}
-		// TODO: добавить точку перед заглавными буквами
 		// TODO: запись в файл
 		fmt.Println(wordsArr)
 	}
@@ -81,4 +77,34 @@ func scan() string {
 		fmt.Fprintln(os.Stderr, "Ошибка ввода:", err)
 	}
 	return in.Text()
+}
+
+// функция замены слова
+func reInter(strInter string) (string, bool) {
+	var dotBool bool
+	dotBool = false
+	// кейсы по замене
+	switch {
+	case strInter == "ADJECTIVE":
+		fmt.Println("Введите имя прилагательное:")
+		s := scan()
+		strInter = s
+		dotBool = true
+	case strInter == "NOUN":
+		fmt.Println("Введите имя существительное:")
+		s := scan()
+		strInter = s
+		dotBool = true
+	case strInter == "VERB":
+		fmt.Println("Введите глагол:")
+		s := scan()
+		strInter = s
+		dotBool = true
+	case strInter == "ADVERB":
+		fmt.Println("Введите наречие:")
+		s := scan()
+		strInter = s
+		dotBool = true
+	}
+	return strInter, dotBool
 }
