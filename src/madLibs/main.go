@@ -60,10 +60,19 @@ func main() {
 		// TODO: запись в файл
 		tmp, _ := os.OpenFile("tmp_"+os.Args[1], os.O_WRONLY|os.O_CREATE, 0600)
 		defer tmp.Close()
-		// []string to []byte
-		stringByte := "\x00" + strings.Join(wordsArr, "\x20\x00") // x20 = space and x00 = null
+		// []string to string
+		var strAdd string
+		for i := 0; i < len(wordsArr); i++ {
+			strAdd += wordsArr[i]
+			if i != len(wordsArr)-1 {
+				strAdd += " "
+			}
+			if i == len(wordsArr)-1 {
+				strAdd += "\n"
+			}
+		}
 		// запись в файл хранения
-		if _, err := tmp.Write([]byte(stringByte)); err != nil {
+		if _, err := tmp.Write([]byte(strAdd)); err != nil {
 			panic(err)
 		}
 	}
