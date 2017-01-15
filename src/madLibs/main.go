@@ -60,6 +60,8 @@ func main() {
 				wordsArr[i] = s
 			}
 		}
+		// TODO: добавить точку перед заглавными буквами
+		// TODO: запись в файл
 		fmt.Println(wordsArr)
 	}
 }
