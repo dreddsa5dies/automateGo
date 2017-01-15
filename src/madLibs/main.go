@@ -9,6 +9,7 @@ NOUN - наречие
 */
 
 import (
+	"bufio"
 	"fmt"
 	"io/ioutil"
 	"os"
@@ -42,13 +43,21 @@ func main() {
 			// кейсы по замене
 			switch {
 			case wordsArr[i] == "ADJECTIVE":
-				fmt.Println("прилагательное")
+				fmt.Println("Введите имя прилагательное:")
+				s := scan()
+				wordsArr[i] = s
 			case wordsArr[i] == "NOUN":
-				fmt.Println("существительное")
+				fmt.Println("Введите имя существительное:")
+				s := scan()
+				wordsArr[i] = s
 			case wordsArr[i] == "VERB":
-				fmt.Println("глагол")
+				fmt.Println("Введите глагол:")
+				s := scan()
+				wordsArr[i] = s
 			case wordsArr[i] == "ADVERB":
-				fmt.Println("наречие")
+				fmt.Println("Введите наречие:")
+				s := scan()
+				wordsArr[i] = s
 			}
 		}
 		fmt.Println(wordsArr)
@@ -60,4 +69,14 @@ func check(e error) {
 	if e != nil {
 		panic(e)
 	}
+}
+
+// функция ввода данных
+func scan() string {
+	in := bufio.NewScanner(os.Stdin)
+	in.Scan()
+	if err := in.Err(); err != nil {
+		fmt.Fprintln(os.Stderr, "Ошибка ввода:", err)
+	}
+	return in.Text()
 }
