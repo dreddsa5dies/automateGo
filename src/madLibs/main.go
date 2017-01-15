@@ -10,6 +10,7 @@ NOUN - наречие
 
 import (
 	"fmt"
+	"io/ioutil"
 	"os"
 )
 
@@ -25,10 +26,9 @@ func main() {
 		madLib <адрес файла.txt>`)
 	} else if len(os.Args) == 2 {
 		// проверка корректности имени файла и его открытие
-		file, err := os.Open(os.Args[1])
+		file, err := ioutil.ReadFile(os.Args[1])
 		check(err)
-		defer file.Close()
-		fmt.Println(file)
+		fmt.Println(string(file))
 	}
 }
 
