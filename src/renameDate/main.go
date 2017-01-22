@@ -9,6 +9,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"regexp"
 )
 
 func main() {
@@ -45,6 +46,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		fmt.Println(reference)
 	} else {
 		// TODO: создания паттерна рег выражения для файлов
+		regStr, _ := regexp.Compile(`.*(\d|\d\d)-(\d|\d\d)-(\d\d\d\d).*`)
 		// TODO: цикл по файлам каталога
 		// TODO: пропуск файлов не соответствующих регулярному выражению
 		// TODO: получения отдельных частей имен файла
