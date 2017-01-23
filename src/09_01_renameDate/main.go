@@ -64,10 +64,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			strFile := fi.Name()
 			// TODO: пропуск файлов не соответствующих регулярному выражению
 			if regStr.MatchString(strFile) {
-				fmt.Println(fi.Name())
+				fmt.Println(strFile)
+				regNameFile, _ := regexp.Compile(`(\d|\d\d)-(\d|\d\d)-(\d\d\d\d)`)
+				// TODO: получения отдельных частей имен файла
+				findRegexp := regNameFile.FindStringSubmatch(strFile)
+				for i := range findRegexp {
+					fmt.Println(findRegexp[i])
+				}
 			}
 		}
-		// TODO: получения отдельных частей имен файла
 		// TODO: сформировать имена, соотв Европейскому формату
 		// TODO: получить полные абсолютные пути к файлам
 		// TODO: переименование файлов
