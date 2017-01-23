@@ -48,7 +48,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		// TODO: создания паттерна рег выражения для файлов
 		regStr, _ := regexp.Compile(`.*(\d|\d\d)-(\d|\d\d)-(\d\d\d\d).*`)
 		// TODO: цикл по файлам каталога
-		// TODO: пропуск файлов не соответствующих регулярному выражению
+		//открытие папки
+		dir, err := os.Open(os.Args[1])
+		if err != nil {
+			return
+		}
+		defer dir.Close()
+		// список файлов
+		fileInfos, err := dir.Readdir(-1)
+		if err != nil {
+			return
+		}
+		// сам цикл
+		for _, fi := range fileInfos {
+			strFile := fi.Name()
+			// TODO: пропуск файлов не соответствующих регулярному выражению
+			if regStr.MatchString(strFile) {
+				fmt.Println(fi.Name())
+			}
+		}
 		// TODO: получения отдельных частей имен файла
 		// TODO: сформировать имена, соотв Европейскому формату
 		// TODO: получить полные абсолютные пути к файлам
