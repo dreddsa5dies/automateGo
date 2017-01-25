@@ -46,7 +46,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		fmt.Println(reference)
 	} else {
 		// TODO: создания паттерна рег выражения для файлов
-		regStr, _ := regexp.Compile(`(.*)(\d{1,2})-(\d{1,2})-(19|20\d\d)(.*)`)
+		regStr, _ := regexp.Compile(`(\d\d|\d)-(\d\d|\d)-(\d\d\d\d)`)
 		// TODO: цикл по файлам каталога
 		//открытие папки
 		dir, err := os.Open(os.Args[1])
@@ -67,12 +67,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				// TODO: получения отдельных частей имен файла
 				findRegexp := regStr.FindStringSubmatch(strFile)
 				fmt.Println(findRegexp)
-				for i := range findRegexp {
-					fmt.Println(findRegexp[i] + ",")
-				}
+				// TODO: сформировать имена, соотв Европейскому формату
+				findRegexp[1], findRegexp[2] = findRegexp[2], findRegexp[1]
+				fmt.Println(findRegexp)
 			}
 		}
-		// TODO: сформировать имена, соотв Европейскому формату
 		// TODO: получить полные абсолютные пути к файлам
 		// TODO: переименование файлов
 	}
