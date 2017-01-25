@@ -79,15 +79,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 /*
-Функции для перемещения и копирования файлов:
-//перемещаем файл
-func moveFile(src, dst string) error {
- err := os.Rename(src, dst)
- if err != nil {
-  return err
- }
- return nil
-}
 //копируем файл
 func copyFile(src string, dst string) (err error) {
  sourcefile, err := os.Open(src)
