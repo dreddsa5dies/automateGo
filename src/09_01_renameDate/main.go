@@ -9,6 +9,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"path/filepath"
 	"regexp"
 )
 
@@ -66,14 +67,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			if regStr.MatchString(strFile) {
 				// TODO: получения отдельных частей имен файла
 				findRegexp := regStr.FindStringSubmatch(strFile)
-				fmt.Println(findRegexp)
 				// TODO: сформировать имена, соотв Европейскому формату
 				findRegexp[1], findRegexp[2] = findRegexp[2], findRegexp[1]
 				fmt.Println(findRegexp)
+				// TODO: получить полные абсолютные пути к файлам
+				filePath, err := filepath.Abs(fi.Name())
+				if err != nil {
+					return
+				}
+				// TODO: переименование файлов
+				os.Rename()
 			}
 		}
-		// TODO: получить полные абсолютные пути к файлам
-		// TODO: переименование файлов
 	}
 }
 
