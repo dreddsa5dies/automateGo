@@ -11,6 +11,7 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"strings"
 )
 
 func main() {
@@ -69,44 +70,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				findRegexp := regStr.FindStringSubmatch(strFile)
 				// TODO: сформировать имена, соотв Европейскому формату
 				findRegexp[1], findRegexp[2] = findRegexp[2], findRegexp[1]
-				fmt.Println(findRegexp)
+				var newDateInFilename string
+				for i := 1; i < len(findRegexp); i++ {
+					newDateInFilename += findRegexp[i]
+					if i != len(findRegexp)-1 {
+						newDateInFilename += "-"
+					}
+				}
+				strNewFile := strings.Replace(strFile, findRegexp[0], newDateInFilename, -1)
+				fmt.Println(strNewFile)
 				// TODO: получить полные абсолютные пути к файлам
 				filePath, err := filepath.Abs(fi.Name())
 				if err != nil {
 					return
 				}
+				fmt.Println(filePath)
 				// TODO: переименование файлов
-				os.Rename()
+				//os.Rename(filePath)
 			}
 		}
 	}
 }
-
-/*
-//копируем файл
-func copyFile(src string, dst string) (err error) {
- sourcefile, err := os.Open(src)
- if err != nil {
-  return err
- }
- defer sourcefile.Close()
- destfile, err := os.Create(dst)
- if err != nil {
-  return err
- }
- //копируем содержимое и проверяем коды ошибок
- _, err = io.Copy(destfile, sourcefile)
- if closeErr := destfile.Close(); err == nil {
-  //если ошибки в io.Copy нет, то берем ошибку от destfile.Close(), если она была
-  err = closeErr
- }
- if err != nil {
-  return err
- }
- sourceinfo, err := os.Stat(src)
- if err == nil {
-  err = os.Chmod(dst, sourceinfo.Mode())
- }
- return err
-}
-*/
