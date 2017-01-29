@@ -47,7 +47,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`
 		fmt.Println(reference)
 	} else {
-		// TODO: создания паттерна рег выражения для файлов
+		// TODO: создание паттерна рег выражения для файлов
 		regStr, _ := regexp.Compile(`(\d\d|\d)-(\d\d|\d)-(\d\d\d\d)`)
 		// TODO: цикл по файлам каталога
 		//открытие папки
@@ -77,16 +77,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 						newDateInFilename += "-"
 					}
 				}
+				// новое имя
 				strNewFile := strings.Replace(strFile, findRegexp[0], newDateInFilename, -1)
-				fmt.Println(strNewFile)
 				// TODO: получить полные абсолютные пути к файлам
 				filePath, err := filepath.Abs(fi.Name())
 				if err != nil {
 					return
 				}
-				fmt.Println(filePath)
 				// TODO: переименование файлов
-				//os.Rename(filePath)
+				newFilePath := strings.Replace(filePath, strFile, strNewFile, -1)
+				os.Rename(filePath, newFilePath)
 			}
 		}
 	}
