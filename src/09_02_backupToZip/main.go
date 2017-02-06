@@ -8,6 +8,8 @@ package main
 import (
 	"fmt"
 	"os"
+	"path/filepath"
+	"strconv"
 )
 
 func main() {
@@ -17,7 +19,7 @@ func main() {
 ИМЯ
 
 backupToZip -   Копирует папку вместе со всем содержимым в zip-файл 
-				с инкреминтируемым номером копии в имени файла. 
+		с инкреминтируемым номером копии в имени файла. 
 
 СИНТАКСИС
 
@@ -43,8 +45,105 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		fmt.Println(reference)
 	} else {
 		// TODO: проверка на абсолютный путь к файлу
-		// TODO: определение имени которое следует присвоить файлу
+		filePath, err := filepath.Abs(os.Args[1])
+		if err != nil {
+			return
+		}
+		fmt.Println(filePath)
+		// TODO: определение имени которое следует присвоить файлу (исходя из существующих)
+		var zipFileName string
+		number := 1
+		for true {
+			zipFileName = filePath + "_" + strconv.Itoa(number) + ".zip"
+			boolName, err := exists(zipFileName)
+			if err != nil {
+				return
+			}
+			if !boolName {
+				break
+			}
+			number++
+		}
+		fmt.Println(zipFileName)
 		// TODO: создание zip-файла
 		// TODO: обойти все дерево папки и сжать файлы в каждой папке
 	}
 }
+
+// exists returns whether the given file or directory exists or not
+func exists(path string) (bool, error) {
+	_, err := os.Stat(path)
+	if err == nil {
+		return true, nil
+	}
+	if os.IsNotExist(err) {
+		return false, nil
+	}
+	return true, err
+}
+
+/*
+// архивирование
+// zipit("/tmp/documents", "/tmp/backup.zip")
+// zipit("/tmp/report.txt", "/tmp/report-2015.zip")
+func zipit(source, target string) error {
+	zipfile, err := os.Create(target)
+	if err != nil {
+		return err
+	}
+	defer zipfile.Close()
+
+	archive := zip.NewWriter(zipfile)
+	defer archive.Close()
+
+	info, err := os.Stat(source)
+	if err != nil {
+		return nil
+	}
+
+	var baseDir string
+	if info.IsDir() {
+		baseDir = filepath.Base(source)
+	}
+
+	filepath.Walk(source, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
+
+		header, err := zip.FileInfoHeader(info)
+		if err != nil {
+			return err
+		}
+
+		if baseDir != "" {
+			header.Name = filepath.Join(baseDir, strings.TrimPrefix(path, source))
+		}
+
+		if info.IsDir() {
+			header.Name += "/"
+		} else {
+			header.Method = zip.Deflate
+		}
+
+		writer, err := archive.CreateHeader(header)
+		if err != nil {
+			return err
+		}
+
+		if info.IsDir() {
+			return nil
+		}
+
+		file, err := os.Open(path)
+		if err != nil {
+			return err
+		}
+		defer file.Close()
+		_, err = io.Copy(writer, file)
+		return err
+	})
+
+	return err
+}
+*/
