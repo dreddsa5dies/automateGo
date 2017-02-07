@@ -51,35 +51,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		}
 		fmt.Println(filePath)
 		// TODO: определение имени которое следует присвоить файлу (исходя из существующих)
-		var zipFileName string
 		number := 1
-		for true {
-			zipFileName = filePath + "_" + strconv.Itoa(number) + ".zip"
-			boolName, err := exists(zipFileName)
-			if err != nil {
-				return
-			}
-			if !boolName {
-				break
-			}
-			number++
-		}
-		fmt.Println(zipFileName)
+		zipFileName := filePath + "_" + strconv.Itoa(number) + ".zip"
+		// не работает
+		fmt.Println("!!!" + zipFileName)
 		// TODO: создание zip-файла
 		// TODO: обойти все дерево папки и сжать файлы в каждой папке
 	}
-}
-
-// exists returns whether the given file or directory exists or not
-func exists(path string) (bool, error) {
-	_, err := os.Stat(path)
-	if err == nil {
-		return true, nil
-	}
-	if os.IsNotExist(err) {
-		return false, nil
-	}
-	return true, err
 }
 
 /*
