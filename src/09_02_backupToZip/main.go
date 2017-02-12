@@ -6,10 +6,13 @@ package main
 */
 
 import (
+	"archive/zip"
 	"fmt"
+	"io"
 	"os"
 	"path/filepath"
 	"strconv"
+	"strings"
 )
 
 func main() {
@@ -61,14 +64,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			}
 			number++
 		}
-		fmt.Println("! " + zipFileName)
 		// TODO: создание zip-файла
 		// TODO: обойти все дерево папки и сжать файлы в каждой папке
+		fmt.Printf("Создается файл %s\n", zipFileName)
+		zipit(os.Args[1], zipFileName)
 		fmt.Println("Готово")
 	}
 }
 
-/*
 // архивирование
 // zipit("/tmp/documents", "/tmp/backup.zip")
 // zipit("/tmp/report.txt", "/tmp/report-2015.zip")
@@ -132,4 +135,3 @@ func zipit(source, target string) error {
 
 	return err
 }
-*/
