@@ -50,13 +50,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			return
 		}
 		fmt.Println(filePath)
+		var zipFileName string
 		// TODO: определение имени которое следует присвоить файлу (исходя из существующих)
 		number := 1
-		zipFileName := filePath + "_" + strconv.Itoa(number) + ".zip"
-		// не работает
-		fmt.Println("!!!" + zipFileName)
+		for true {
+			zipFileName = filePath + "_" + strconv.Itoa(number) + ".zip"
+			// не работает
+			if _, err := os.Stat(zipFileName); os.IsNotExist(err) {
+				break
+			}
+			number++
+		}
+		fmt.Println("! " + zipFileName)
 		// TODO: создание zip-файла
 		// TODO: обойти все дерево папки и сжать файлы в каждой папке
+		fmt.Println("Готово")
 	}
 }
 
