@@ -9,19 +9,17 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"strings"
 )
 
-func main() {
-	if len(os.Args) == 1 {
-		// вывод справки
-		reference := `
+const reference string = `
 ИМЯ
 
 selectiveBackup - Копирует файлы из папок с заданным расширением. 
 
 СИНТАКСИС
 
-selectiveBackup КАТАЛОГ  
+selectiveBackup [pdf/jpg] КАТАЛОГ  
 
 АВТОР
 
@@ -40,10 +38,23 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`
+
+func main() {
+	if len(os.Args) == 1 {
+		// вывод справки
 		fmt.Println(reference)
 	} else {
-		// TODO: обход директории
-		readdir(os.Args[1])
+		// TODO: выбор расширения
+		// парсинг флагов
+		if len(os.Args) == 3 && os.Args[1] == "pdf" {
+			// TODO: обход указанной директории
+			readdir(os.Args[2])
+		} else if os.Args[1] == "jpg" {
+			readdir(os.Args[2])
+		} else {
+			fmt.Println(reference)
+		}
+		// TODO: копирование выбранных файлов
 		fmt.Println("Готово")
 	}
 }
@@ -63,7 +74,10 @@ func readdir(dir string) {
 		}
 		// вывод списка
 		for _, fi := range fis {
-			fmt.Printf("%s/%s\n", dir, fi.Name())
+			// тут доложно быть копирование
+			if strings.HasSuffix(fi.Name(), os.Args[1]) {
+				fmt.Printf("%s/%s\n", dir, fi.Name())
+			}
 			// рекурсивный проход по поддиректориям
 			if fi.IsDir() {
 				readdir(dir + "/" + fi.Name())
