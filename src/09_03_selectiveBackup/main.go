@@ -19,7 +19,7 @@ selectiveBackup - Копирует файлы из папок с заданны�
 
 СИНТАКСИС
 
-selectiveBackup [pdf/jpg] КАТАЛОГ  
+selectiveBackup [pdf/jpg] КАТАЛОГ
 
 АВТОР
 
@@ -54,7 +54,6 @@ func main() {
 		} else {
 			fmt.Println(reference)
 		}
-		// TODO: копирование выбранных файлов
 		fmt.Println("Готово")
 	}
 }
@@ -76,7 +75,12 @@ func readdir(dir string) {
 		for _, fi := range fis {
 			// тут доложно быть копирование
 			if strings.HasSuffix(fi.Name(), os.Args[1]) {
-				fmt.Printf("%s/%s\n", dir, fi.Name())
+				// TODO: копирование выбранных файлов
+				fmt.Printf("Копирование %s/%s\n", dir, fi.Name())
+				srcFile := dir + "/" + fi.Name()
+				// адрес назначения можно подкорректировать
+				dstFile := "/tmp/" + fi.Name()
+				copyFile(srcFile, dstFile)
 			}
 			// рекурсивный проход по поддиректориям
 			if fi.IsDir() {
