@@ -71,3 +71,30 @@ func readdir(dir string) {
 		}
 	}
 }
+
+//копируем файл
+func copyFile(src string, dst string) (err error) {
+	sourcefile, err := os.Open(src)
+	if err != nil {
+		return err
+	}
+	defer sourcefile.Close()
+	destfile, err := os.Create(dst)
+	if err != nil {
+		return err
+	}
+	//копируем содержимое и проверяем коды ошибок
+	_, err = io.Copy(destfile, sourcefile)
+	if closeErr := destfile.Close(); err == nil {
+		//если ошибки в io.Copy нет, то берем ошибку от destfile.Close(), если она была
+		err = closeErr
+	}
+	if err != nil {
+		return err
+	}
+	sourceinfo, err := os.Stat(src)
+	if err == nil {
+		err = os.Chmod(dst, sourceinfo.Mode())
+	}
+	return err
+}
