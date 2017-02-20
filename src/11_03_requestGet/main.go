@@ -45,25 +45,29 @@ func main() {
 		// создание файла log
 		// и нормальная обработка лога
 		fLog, err := os.OpenFile(pwdDir+"/log.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0640)
-		if err != nil {
-			log.Fatalln(err)
-		}
-		log.SetOutput(io.MultiWriter(fLog, os.Stdout))
+		check(err, fLog)
 
 		url := "http://www.gutenberg.org/cache/epub/1112/pg1112.txt"
 
 		// запрос по url
 		resp, err := http.Get(url)
-		if err != nil {
-			log.Fatalln(err)
-		}
-		log.SetOutput(io.MultiWriter(fLog, os.Stdout))
+		check(err, fLog)
+		// отложенное закрытие коннекта
 		defer resp.Body.Close()
+
+		// забись ответа в переменную
 		body, err := ioutil.ReadAll(resp.Body)
-		if err != nil {
-			log.Fatalln(err)
-		}
-		log.SetOutput(io.MultiWriter(fLog, os.Stdout))
+		check(err, fLog)
+
+		// вывод содержимого
 		fmt.Println(string(body))
 	}
+}
+
+// err check to log
+func check(err error, fLog *os.File) {
+	if err != nil {
+		log.Fatalln(err)
+	}
+	log.SetOutput(io.MultiWriter(fLog, os.Stdout))
 }
