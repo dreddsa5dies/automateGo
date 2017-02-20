@@ -3,10 +3,11 @@ package main
 import (
 	"fmt"
 	"io"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
+
+	"github.com/jackdanger/collectlinks"
 )
 
 const reference string = `
@@ -53,17 +54,16 @@ func main() {
 		}
 
 		// запрос по url
-		resp, err := http.Get("https://www.google.ru/webhp#newwindow=1&safe=off&q=" + url + "insite:sbis.ru")
+		resp, err := http.Get("http://dreddsa5dies.github.io")
 		check(err, fLog)
 		// отложенное закрытие коннекта
 		defer resp.Body.Close()
 
-		// забись ответа в переменную
-		body, err := ioutil.ReadAll(resp.Body)
-		check(err, fLog)
+		links := collectlinks.All(resp.Body)
 
-		// вывод содержимого
-		fmt.Println(string(body))
+		for _, link := range links {
+			fmt.Println(link)
+		}
 	}
 }
 
