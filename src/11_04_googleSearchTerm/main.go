@@ -38,7 +38,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`
 
 func main() {
-	if len(os.Args) == 1 {
+	if len(os.Args) > 1 {
 		// вывод справки
 		fmt.Println(reference)
 	} else {
@@ -47,11 +47,6 @@ func main() {
 		// и нормальная обработка лога
 		fLog, err := os.OpenFile(pwdDir+"/log.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0640)
 		check(err, fLog)
-
-		var url string
-		for i := 1; i < len(os.Args); i++ {
-			url += os.Args[i] + "%20"
-		}
 
 		// запрос по url
 		resp, err := http.Get("http://dreddsa5dies.github.io")
