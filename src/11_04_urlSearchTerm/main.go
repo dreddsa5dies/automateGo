@@ -13,11 +13,11 @@ import (
 const reference string = `
 ИМЯ
 
-googleSearchTerm - запрос поиска Google
+urlSearchTerm - запрос поиска Google
 
 СИНТАКСИС
 
-googleSearchTerm ТЕКСТ
+urlSearchTerm ТЕКСТ
 
 АВТОР
 
