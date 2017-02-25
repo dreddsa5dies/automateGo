@@ -58,10 +58,10 @@ func main() {
 		err = os.Mkdir(pwdDir+"/xkcd", 0775)
 		check(err, fLog)
 
-		// for i := 0; i < 5; i++ {
 		// TODO: Загрузить страницу
 		// запрос по url
 		resp, err := http.Get(url)
+		log.Printf("Загружается страница:	%v", url)
 		check(err, fLog)
 		// отложенное закрытие коннекта
 		defer resp.Body.Close()
@@ -70,6 +70,14 @@ func main() {
 		// парсинг ответа
 		x, err := goquery.Parse(resp.Body)
 		check(err, fLog)
+
+		// ищу ссылочки на старые комиксы
+		regLastLink, _ := regexp.Compile(`\/[0-9]{1,}\/`)
+		for _, i := range x.Find("a").Attrs("href") {
+			if regLastLink.MatchString(i) {
+				fmt.Println(strings.Trim(i, "/"))
+			}
+		}
 
 		// нахождение ссылки
 		regStr, _ := regexp.Compile(`comics`)
@@ -84,6 +92,7 @@ func main() {
 
 				// TODO: Загрузить комикс
 				respImg, err := http.Get("http:" + i)
+				log.Printf("Загружается изображение:	%v", "http:"+i)
 				check(err, fLog)
 				// отложенное закрытие коннекта
 				defer respImg.Body.Close()
@@ -93,12 +102,13 @@ func main() {
 				check(err, fLog)
 
 				// TODO: Сохранить изображение
+				log.Printf("Сохрание в:	%v", name)
 				fSave.Write(bodyImg)
 			}
 		}
 
 		// TODO: Получить URL для prev
-		//}
+
 		log.Println("Готово")
 		log.SetOutput(io.MultiWriter(fLog, os.Stdout))
 	}
