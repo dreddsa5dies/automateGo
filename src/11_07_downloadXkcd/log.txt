@@ -1,0 +1,109 @@
+2017/02/25 09:33:35 Готово
+2017/02/25 09:34:20 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:34:20 Готово
+2017/02/25 09:36:16 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:36:16 Готово
+2017/02/25 09:36:27 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:36:27 Готово
+2017/02/25 09:36:38 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:36:38 Готово
+2017/02/25 09:36:45 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:36:45 Готово
+2017/02/25 09:37:12 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:37:13 Готово
+2017/02/25 09:37:25 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:37:26 Готово
+2017/02/25 09:37:43 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:37:44 Готово
+2017/02/25 09:38:02 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:38:06 Готово
+2017/02/25 09:38:17 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:38:21 Готово
+2017/02/25 09:39:49 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:39:50 Готово
+2017/02/25 09:40:25 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:40:26 Готово
+2017/02/25 09:40:36 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:40:36 Готово
+2017/02/25 09:41:37 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:41:37 Готово
+2017/02/25 09:41:58 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:41:58 Готово
+2017/02/25 09:42:14 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:42:14 Готово
+2017/02/25 09:42:29 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:42:30 Готово
+2017/02/25 09:43:15 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:43:15 Готово
+2017/02/25 09:43:27 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:43:27 Готово
+2017/02/25 09:44:53 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:44:53 Готово
+2017/02/25 09:45:02 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:45:06 Готово
+2017/02/25 09:48:02 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:48:51 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:51:15 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:52:19 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:52:53 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:54:07 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:55:28 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:55:40 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:57:36 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:58:15 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:58:36 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:58:45 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:58:53 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 09:59:10 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:00:17 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:24:47 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:24:47 Готово
+2017/02/25 10:26:11 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:26:12 Готово
+2017/02/25 10:26:34 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:26:34 Готово
+2017/02/25 10:27:20 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:27:20 Готово
+2017/02/25 10:27:54 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:27:55 Готово
+2017/02/25 10:28:19 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:28:19 Готово
+2017/02/25 10:28:26 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:28:30 Готово
+2017/02/25 10:31:41 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:32:22 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:32:35 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:32:35 Готово
+2017/02/25 10:37:37 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:37:41 Готово
+2017/02/25 10:38:24 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:38:25 Готово
+2017/02/25 10:39:33 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:39:33 Готово
+2017/02/25 10:42:51 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:42:51 Готово
+2017/02/25 10:47:50 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:47:51 open /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/1.png: permission denied
+2017/02/25 10:47:51 Готово
+2017/02/25 10:49:53 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:49:54 open /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/1.png: permission denied
+2017/02/25 10:49:54 Готово
+2017/02/25 10:52:08 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:52:08 open /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/1.png: permission denied
+2017/02/25 10:52:08 Готово
+2017/02/25 10:52:27 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:52:27 open /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/1.png: permission denied
+2017/02/25 10:52:27 Готово
+2017/02/25 10:54:20 open /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/1.png: permission denied
+2017/02/25 10:54:20 Готово
+2017/02/25 10:54:44 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:54:44 open /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/1.png: permission denied
+2017/02/25 10:54:44 Готово
+2017/02/25 10:54:53 open /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/1.png: permission denied
+2017/02/25 10:54:53 Готово
+2017/02/25 10:55:10 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:55:10 open /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/1.png: permission denied
+2017/02/25 10:55:10 Готово
+2017/02/25 10:55:16 Готово
+2017/02/25 10:58:58 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 10:58:59 Готово
