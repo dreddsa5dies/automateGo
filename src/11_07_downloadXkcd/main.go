@@ -11,6 +11,10 @@ import (
 
 	"strings"
 
+	"strconv"
+
+	"sort"
+
 	"github.com/opesun/goquery"
 )
 
@@ -71,43 +75,59 @@ func main() {
 		x, err := goquery.Parse(resp.Body)
 		check(err, fLog)
 
+		// TODO: Получить URL для prev
 		// ищу ссылочки на старые комиксы
+		var urlInt []int
 		regLastLink, _ := regexp.Compile(`\/[0-9]{1,}\/`)
 		for _, i := range x.Find("a").Attrs("href") {
 			if regLastLink.MatchString(i) {
-				fmt.Println(strings.Trim(i, "/"))
+				a, err := strconv.Atoi(strings.Trim(i, "/"))
+				check(err, fLog)
+				urlInt = append(urlInt, a)
 			}
 		}
+		sort.Ints(urlInt)
+		// предыдущая ссылка
+		fmt.Println(urlInt[len(urlInt)-1])
 
-		// нахождение ссылки
-		regStr, _ := regexp.Compile(`comics`)
-		for _, i := range x.Find("img").Attrs("src") {
-			if regStr.MatchString(i) {
-				// формирование имени файла
-				nameFile := strings.Split(i, "/comics/")
-				// создание файла для загрузки картинки
-				name := pwdDir + "/xkcd/" + nameFile[1]
-				fSave, err := os.OpenFile(name, os.O_CREATE|os.O_WRONLY, 0640)
-				check(err, fLog)
+		for k := urlInt[len(urlInt)-1] + 1; k >= 1; k-- {
+			resp, err := http.Get(url + "/" + strconv.Itoa(k))
+			log.Printf("Загружается страница:	%v", url+"/"+strconv.Itoa(k))
+			check(err, fLog)
+			defer resp.Body.Close()
 
-				// TODO: Загрузить комикс
-				respImg, err := http.Get("http:" + i)
-				log.Printf("Загружается изображение:	%v", "http:"+i)
-				check(err, fLog)
-				// отложенное закрытие коннекта
-				defer respImg.Body.Close()
+			// TODO: Найти URL комикса
+			// парсинг ответа
+			x, err := goquery.Parse(resp.Body)
+			check(err, fLog)
+			// нахождение ссылки
+			regStr, _ := regexp.Compile(`comics`)
+			for _, i := range x.Find("img").Attrs("src") {
+				if regStr.MatchString(i) {
+					// формирование имени файла
+					nameFile := strings.Split(i, "/comics/")
+					// создание файла для загрузки картинки
+					name := pwdDir + "/xkcd/" + nameFile[1]
+					fSave, err := os.OpenFile(name, os.O_CREATE|os.O_WRONLY, 0640)
+					check(err, fLog)
 
-				// запись ответа в переменную
-				bodyImg, err := ioutil.ReadAll(respImg.Body)
-				check(err, fLog)
+					// TODO: Загрузить комикс
+					respImg, err := http.Get("http:" + i)
+					log.Printf("Загружается изображение:	%v", "http:"+i)
+					check(err, fLog)
+					// отложенное закрытие коннекта
+					defer respImg.Body.Close()
 
-				// TODO: Сохранить изображение
-				log.Printf("Сохрание в:	%v", name)
-				fSave.Write(bodyImg)
+					// запись ответа в переменную
+					bodyImg, err := ioutil.ReadAll(respImg.Body)
+					check(err, fLog)
+
+					// TODO: Сохранить изображение
+					log.Printf("Сохрание в:	%v", name)
+					fSave.Write(bodyImg)
+				}
 			}
 		}
-
-		// TODO: Получить URL для prev
 
 		log.Println("Готово")
 		log.SetOutput(io.MultiWriter(fLog, os.Stdout))

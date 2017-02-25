@@ -1,283 +1,152 @@
-2017/02/25 11:09:27 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:09:28 Загружается страница:	http://xkcd.com
-2017/02/25 11:09:28 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:09:28 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:09:28 Готово
-2017/02/25 11:10:19 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:10:19 Загружается страница:	http://xkcd.com
-2017/02/25 11:10:20 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:10:20 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:10:20 Готово
-2017/02/25 11:10:30 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:10:34 Загружается страница:	http://xkcd.com
-2017/02/25 11:10:34 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:10:35 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:10:35 Готово
-2017/02/25 11:10:52 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:10:52 Загружается страница:	http://xkcd.com
-2017/02/25 11:10:52 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:10:52 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:10:52 Готово
-2017/02/25 11:10:59 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:10:59 Загружается страница:	http://xkcd.com
-2017/02/25 11:10:59 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:10:59 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:10:59 Готово
-2017/02/25 11:11:42 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:11:42 Загружается страница:	http://xkcd.com
-2017/02/25 11:11:42 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:11:42 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:11:42 Готово
-2017/02/25 11:12:14 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:12:15 Загружается страница:	http://xkcd.com
-2017/02/25 11:12:15 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:12:15 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:12:15 Готово
-2017/02/25 11:12:41 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:12:41 Загружается страница:	http://xkcd.com
-2017/02/25 11:12:41 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:12:41 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:12:41 Готово
-2017/02/25 11:15:37 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:15:38 Загружается страница:	http://xkcd.com
-2017/02/25 11:15:38 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:15:38 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:15:38 Готово
-2017/02/25 11:17:17 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:17:18 Загружается страница:	http://xkcd.com
-2017/02/25 11:17:18 Готово
-2017/02/25 11:18:40 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:18:40 Загружается страница:	http://xkcd.com
-2017/02/25 11:18:40 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:18:40 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:18:40 Готово
-2017/02/25 11:18:48 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:18:48 Загружается страница:	http://xkcd.com
-2017/02/25 11:18:48 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:18:48 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:18:48 Готово
-2017/02/25 11:19:15 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:19:15 Загружается страница:	http://xkcd.com
-2017/02/25 11:19:15 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:19:15 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:19:15 Готово
-2017/02/25 11:19:24 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:19:24 Загружается страница:	http://xkcd.com
-2017/02/25 11:19:25 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:19:25 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:19:25 Готово
-2017/02/25 11:19:36 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:19:36 Загружается страница:	http://xkcd.com
-2017/02/25 11:19:36 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:19:36 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:19:36 Готово
-2017/02/25 11:20:40 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:20:40 Загружается страница:	http://xkcd.com
-2017/02/25 11:20:40 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:20:40 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:20:40 Готово
-2017/02/25 11:21:37 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:21:38 Загружается страница:	http://xkcd.com
-2017/02/25 11:21:38 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:21:38 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:21:38 Готово
-2017/02/25 11:22:03 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:22:03 Загружается страница:	http://xkcd.com
-2017/02/25 11:22:03 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:22:03 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:22:03 Готово
-2017/02/25 11:22:23 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:22:23 Загружается страница:	http://xkcd.com
-2017/02/25 11:22:23 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:22:23 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:22:23 Готово
-2017/02/25 11:22:34 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:22:35 Загружается страница:	http://xkcd.com
-2017/02/25 11:22:35 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:22:35 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:22:35 Готово
-2017/02/25 11:23:38 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:23:38 Загружается страница:	http://xkcd.com
-2017/02/25 11:23:38 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:23:38 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:23:38 Готово
-2017/02/25 11:24:16 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:24:16 Загружается страница:	http://xkcd.com
-2017/02/25 11:24:16 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:24:16 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:24:16 Готово
-2017/02/25 11:24:57 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:24:57 Загружается страница:	http://xkcd.com
-2017/02/25 11:24:57 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:24:57 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:24:57 Готово
-2017/02/25 11:25:22 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:25:22 Загружается страница:	http://xkcd.com
-2017/02/25 11:25:22 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:25:22 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:25:22 Готово
-2017/02/25 11:25:28 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:25:28 Загружается страница:	http://xkcd.com
-2017/02/25 11:25:29 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:25:29 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:25:29 Готово
-2017/02/25 11:25:35 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:25:36 Загружается страница:	http://xkcd.com
-2017/02/25 11:25:36 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:25:36 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:25:36 Готово
-2017/02/25 11:25:46 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:25:46 Загружается страница:	http://xkcd.com
-2017/02/25 11:25:46 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:25:46 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:25:46 Готово
-2017/02/25 11:25:57 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:25:57 Загружается страница:	http://xkcd.com
-2017/02/25 11:25:57 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:25:57 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:25:57 Готово
-2017/02/25 11:28:21 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:28:21 Загружается страница:	http://xkcd.com
-2017/02/25 11:28:21 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:28:21 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:28:21 Готово
-2017/02/25 11:32:47 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:32:48 Загружается страница:	http://xkcd.com
-2017/02/25 11:32:48 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:32:48 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:32:48 Готово
-2017/02/25 11:33:43 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:33:43 Загружается страница:	http://xkcd.com
-2017/02/25 11:33:43 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:33:43 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:33:43 Готово
-2017/02/25 11:39:21 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:39:21 Загружается страница:	http://xkcd.com
-2017/02/25 11:39:21 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:39:21 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:39:21 Готово
-2017/02/25 11:42:01 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:42:01 Загружается страница:	http://xkcd.com
-2017/02/25 11:42:01 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:42:02 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:42:02 Готово
-2017/02/25 11:42:12 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:42:12 Загружается страница:	http://xkcd.com
-2017/02/25 11:42:12 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:42:12 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:42:12 Готово
-2017/02/25 11:42:25 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:42:25 Загружается страница:	http://xkcd.com
-2017/02/25 11:42:26 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:42:26 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:42:26 Готово
-2017/02/25 11:42:38 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:42:38 Загружается страница:	http://xkcd.com
-2017/02/25 11:42:38 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:42:38 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:42:38 Готово
-2017/02/25 11:44:37 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:44:37 Загружается страница:	http://xkcd.com
-2017/02/25 11:44:37 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:44:37 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:44:37 Готово
-2017/02/25 11:45:00 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:45:00 Загружается страница:	http://xkcd.com
-2017/02/25 11:45:00 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:45:00 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:45:00 Готово
-2017/02/25 11:45:08 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:45:08 Загружается страница:	http://xkcd.com
-2017/02/25 11:45:10 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:45:10 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:45:10 Готово
-2017/02/25 11:45:46 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:45:47 Загружается страница:	http://xkcd.com
-2017/02/25 11:45:48 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:45:48 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:45:48 Готово
-2017/02/25 11:45:55 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:45:55 Загружается страница:	http://xkcd.com
-2017/02/25 11:45:55 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:45:55 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:45:55 Готово
-2017/02/25 11:46:02 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:46:03 Загружается страница:	http://xkcd.com
-2017/02/25 11:46:03 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:46:03 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:46:03 Готово
-2017/02/25 11:46:53 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:46:54 Загружается страница:	http://xkcd.com
-2017/02/25 11:46:54 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:46:54 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:46:54 Готово
-2017/02/25 11:47:06 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:47:06 Загружается страница:	http://xkcd.com
-2017/02/25 11:47:06 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:47:06 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:47:06 Готово
-2017/02/25 11:47:30 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:47:30 Загружается страница:	http://xkcd.com
-2017/02/25 11:47:30 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:47:30 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:47:30 Готово
-2017/02/25 11:48:04 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:48:04 Загружается страница:	http://xkcd.com
-2017/02/25 11:48:04 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:48:04 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:48:04 Готово
-2017/02/25 11:48:31 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:48:31 Загружается страница:	http://xkcd.com
-2017/02/25 11:48:32 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:48:32 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:48:32 Готово
-2017/02/25 11:51:46 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:51:46 Загружается страница:	http://xkcd.com
-2017/02/25 11:51:46 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:51:46 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:51:46 Готово
-2017/02/25 11:52:04 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:52:04 Загружается страница:	http://xkcd.com
-2017/02/25 11:52:04 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:52:04 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:52:04 Готово
-2017/02/25 11:53:13 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:53:14 Загружается страница:	http://xkcd.com
-2017/02/25 11:53:14 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:53:14 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:53:14 Готово
-2017/02/25 11:53:26 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:53:26 Загружается страница:	http://xkcd.com
-2017/02/25 11:53:26 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:53:26 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:53:26 Готово
-2017/02/25 11:53:39 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:53:39 Загружается страница:	http://xkcd.com
-2017/02/25 11:53:39 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:53:39 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:53:39 Готово
-2017/02/25 11:54:10 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:54:10 Загружается страница:	http://xkcd.com
-2017/02/25 11:54:10 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:54:10 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:54:10 Готово
-2017/02/25 11:59:44 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 11:59:44 Загружается страница:	http://xkcd.com
-2017/02/25 11:59:44 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 11:59:44 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 11:59:44 Готово
-2017/02/25 12:00:23 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 12:00:23 Загружается страница:	http://xkcd.com
-2017/02/25 12:00:23 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 12:00:23 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 12:00:23 Готово
-2017/02/25 12:04:44 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 12:04:44 Загружается страница:	http://xkcd.com
-2017/02/25 12:04:44 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 12:04:44 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 12:04:44 Готово
-2017/02/25 12:07:52 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
-2017/02/25 12:07:52 Загружается страница:	http://xkcd.com
-2017/02/25 12:07:52 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
-2017/02/25 12:07:52 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
-2017/02/25 12:07:52 Готово
+2017/02/25 12:24:07 mkdir /home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd: file exists
+2017/02/25 12:24:07 Загружается страница:	http://xkcd.com
+2017/02/25 12:24:07 Загружается страница:	http://xkcd.com/1803
+2017/02/25 12:24:07 Загружается изображение:	http://imgs.xkcd.com/comics/location_reviews.png
+2017/02/25 12:24:07 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/location_reviews.png
+2017/02/25 12:24:07 Загружается страница:	http://xkcd.com/1802
+2017/02/25 12:24:07 Загружается изображение:	http://imgs.xkcd.com/comics/phone.png
+2017/02/25 12:24:07 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/phone.png
+2017/02/25 12:24:08 Загружается страница:	http://xkcd.com/1801
+2017/02/25 12:24:08 Загружается изображение:	http://imgs.xkcd.com/comics/decision_paralysis.png
+2017/02/25 12:24:08 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/decision_paralysis.png
+2017/02/25 12:24:08 Загружается страница:	http://xkcd.com/1800
+2017/02/25 12:24:08 Загружается изображение:	http://imgs.xkcd.com/comics/chess_notation.png
+2017/02/25 12:24:08 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/chess_notation.png
+2017/02/25 12:24:08 Загружается страница:	http://xkcd.com/1799
+2017/02/25 12:24:08 Загружается изображение:	http://imgs.xkcd.com/comics/bad_map_projection_time_zones.png
+2017/02/25 12:24:08 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/bad_map_projection_time_zones.png
+2017/02/25 12:24:08 Загружается страница:	http://xkcd.com/1798
+2017/02/25 12:24:08 Загружается изображение:	http://imgs.xkcd.com/comics/box_plot.png
+2017/02/25 12:24:08 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/box_plot.png
+2017/02/25 12:24:08 Загружается страница:	http://xkcd.com/1797
+2017/02/25 12:24:08 Загружается изображение:	http://imgs.xkcd.com/comics/stardew_valley.png
+2017/02/25 12:24:08 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/stardew_valley.png
+2017/02/25 12:24:09 Загружается страница:	http://xkcd.com/1796
+2017/02/25 12:24:09 Загружается изображение:	http://imgs.xkcd.com/comics/focus_knob.png
+2017/02/25 12:24:09 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/focus_knob.png
+2017/02/25 12:24:09 Загружается страница:	http://xkcd.com/1795
+2017/02/25 12:24:09 Загружается изображение:	http://imgs.xkcd.com/comics/all_you_can_eat.png
+2017/02/25 12:24:09 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/all_you_can_eat.png
+2017/02/25 12:24:09 Загружается страница:	http://xkcd.com/1794
+2017/02/25 12:24:09 Загружается изображение:	http://imgs.xkcd.com/comics/fire.png
+2017/02/25 12:24:09 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/fire.png
+2017/02/25 12:24:09 Загружается страница:	http://xkcd.com/1793
+2017/02/25 12:24:09 Загружается изображение:	http://imgs.xkcd.com/comics/soda_sugar_comparisons.png
+2017/02/25 12:24:09 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/soda_sugar_comparisons.png
+2017/02/25 12:24:13 Загружается страница:	http://xkcd.com/1792
+2017/02/25 12:24:13 Загружается изображение:	http://imgs.xkcd.com/comics/bird_plane_superman.png
+2017/02/25 12:24:13 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/bird_plane_superman.png
+2017/02/25 12:24:13 Загружается страница:	http://xkcd.com/1791
+2017/02/25 12:24:13 Загружается изображение:	http://imgs.xkcd.com/comics/telescopes_refractor_vs_reflector.png
+2017/02/25 12:24:13 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/telescopes_refractor_vs_reflector.png
+2017/02/25 12:24:13 Загружается страница:	http://xkcd.com/1790
+2017/02/25 12:24:13 Загружается изображение:	http://imgs.xkcd.com/comics/sad.png
+2017/02/25 12:24:13 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/sad.png
+2017/02/25 12:24:14 Загружается страница:	http://xkcd.com/1789
+2017/02/25 12:24:14 Загружается изображение:	http://imgs.xkcd.com/comics/phone_numbers.png
+2017/02/25 12:24:14 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/phone_numbers.png
+2017/02/25 12:24:14 Загружается страница:	http://xkcd.com/1788
+2017/02/25 12:24:14 Загружается изображение:	http://imgs.xkcd.com/comics/barge.png
+2017/02/25 12:24:14 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/barge.png
+2017/02/25 12:24:14 Загружается страница:	http://xkcd.com/1787
+2017/02/25 12:24:14 Загружается изображение:	http://imgs.xkcd.com/comics/voice_commands.png
+2017/02/25 12:24:14 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/voice_commands.png
+2017/02/25 12:24:14 Загружается страница:	http://xkcd.com/1786
+2017/02/25 12:24:14 Загружается изображение:	http://imgs.xkcd.com/comics/trash.png
+2017/02/25 12:24:14 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/trash.png
+2017/02/25 12:24:14 Загружается страница:	http://xkcd.com/1785
+2017/02/25 12:24:14 Загружается изображение:	http://imgs.xkcd.com/comics/wifi.png
+2017/02/25 12:24:14 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/wifi.png
+2017/02/25 12:24:14 Загружается страница:	http://xkcd.com/1784
+2017/02/25 12:24:14 Загружается изображение:	http://imgs.xkcd.com/comics/bad_map_projection_liquid_resize.png
+2017/02/25 12:24:15 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/bad_map_projection_liquid_resize.png
+2017/02/25 12:24:15 Загружается страница:	http://xkcd.com/1783
+2017/02/25 12:24:15 Загружается изображение:	http://imgs.xkcd.com/comics/emails.png
+2017/02/25 12:24:15 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/emails.png
+2017/02/25 12:24:15 Загружается страница:	http://xkcd.com/1782
+2017/02/25 12:24:15 Загружается изображение:	http://imgs.xkcd.com/comics/team_chat.png
+2017/02/25 12:24:15 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/team_chat.png
+2017/02/25 12:24:15 Загружается страница:	http://xkcd.com/1781
+2017/02/25 12:24:15 Загружается изображение:	http://imgs.xkcd.com/comics/artifacts.png
+2017/02/25 12:24:15 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/artifacts.png
+2017/02/25 12:24:15 Загружается страница:	http://xkcd.com/1780
+2017/02/25 12:24:15 Загружается изображение:	http://imgs.xkcd.com/comics/appliance_repair.png
+2017/02/25 12:24:15 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/appliance_repair.png
+2017/02/25 12:24:15 Загружается страница:	http://xkcd.com/1779
+2017/02/25 12:24:15 Загружается изображение:	http://imgs.xkcd.com/comics/2017.png
+2017/02/25 12:24:15 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/2017.png
+2017/02/25 12:24:16 Загружается страница:	http://xkcd.com/1778
+2017/02/25 12:24:16 Загружается изображение:	http://imgs.xkcd.com/comics/interest_timescales.png
+2017/02/25 12:24:16 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/interest_timescales.png
+2017/02/25 12:24:16 Загружается страница:	http://xkcd.com/1777
+2017/02/25 12:24:16 Загружается изображение:	http://imgs.xkcd.com/comics/dear_diary.png
+2017/02/25 12:24:16 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/dear_diary.png
+2017/02/25 12:24:16 Загружается страница:	http://xkcd.com/1776
+2017/02/25 12:24:16 Загружается изображение:	http://imgs.xkcd.com/comics/reindeer.png
+2017/02/25 12:24:16 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/reindeer.png
+2017/02/25 12:24:16 Загружается страница:	http://xkcd.com/1775
+2017/02/25 12:24:16 Загружается изображение:	http://imgs.xkcd.com/comics/things_you_learn.png
+2017/02/25 12:24:16 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/things_you_learn.png
+2017/02/25 12:24:16 Загружается страница:	http://xkcd.com/1774
+2017/02/25 12:24:16 Загружается изображение:	http://imgs.xkcd.com/comics/adjective_foods.png
+2017/02/25 12:24:16 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/adjective_foods.png
+2017/02/25 12:24:17 Загружается страница:	http://xkcd.com/1773
+2017/02/25 12:24:17 Загружается изображение:	http://imgs.xkcd.com/comics/negativity.png
+2017/02/25 12:24:17 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/negativity.png
+2017/02/25 12:24:17 Загружается страница:	http://xkcd.com/1772
+2017/02/25 12:24:17 Загружается изображение:	http://imgs.xkcd.com/comics/startup_opportunity.png
+2017/02/25 12:24:17 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/startup_opportunity.png
+2017/02/25 12:24:17 Загружается страница:	http://xkcd.com/1771
+2017/02/25 12:24:17 Загружается изображение:	http://imgs.xkcd.com/comics/it_was_i.png
+2017/02/25 12:24:17 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/it_was_i.png
+2017/02/25 12:24:17 Загружается страница:	http://xkcd.com/1770
+2017/02/25 12:24:17 Загружается изображение:	http://imgs.xkcd.com/comics/ui_change.png
+2017/02/25 12:24:17 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/ui_change.png
+2017/02/25 12:24:17 Загружается страница:	http://xkcd.com/1769
+2017/02/25 12:24:17 Загружается изображение:	http://imgs.xkcd.com/comics/never_seen_star_wars.png
+2017/02/25 12:24:17 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/never_seen_star_wars.png
+2017/02/25 12:24:18 Загружается страница:	http://xkcd.com/1768
+2017/02/25 12:24:18 Загружается изображение:	http://imgs.xkcd.com/comics/settling.png
+2017/02/25 12:24:18 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/settling.png
+2017/02/25 12:24:18 Загружается страница:	http://xkcd.com/1767
+2017/02/25 12:24:18 Загружается изображение:	http://imgs.xkcd.com/comics/us_state_names.png
+2017/02/25 12:24:18 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/us_state_names.png
+2017/02/25 12:24:18 Загружается страница:	http://xkcd.com/1766
+2017/02/25 12:24:18 Загружается изображение:	http://imgs.xkcd.com/comics/apple_spectrum.png
+2017/02/25 12:24:18 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/apple_spectrum.png
+2017/02/25 12:24:18 Загружается страница:	http://xkcd.com/1765
+2017/02/25 12:24:18 Загружается изображение:	http://imgs.xkcd.com/comics/baby_post.png
+2017/02/25 12:24:18 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/baby_post.png
+2017/02/25 12:24:18 Загружается страница:	http://xkcd.com/1764
+2017/02/25 12:24:18 Загружается изображение:	http://imgs.xkcd.com/comics/xkcde.png
+2017/02/25 12:24:18 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/xkcde.png
+2017/02/25 12:24:19 Загружается страница:	http://xkcd.com/1763
+2017/02/25 12:24:19 Загружается изображение:	http://imgs.xkcd.com/comics/catcalling.png
+2017/02/25 12:24:19 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/catcalling.png
+2017/02/25 12:24:19 Загружается страница:	http://xkcd.com/1762
+2017/02/25 12:24:19 Загружается изображение:	http://imgs.xkcd.com/comics/moving_boxes.png
+2017/02/25 12:24:19 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/moving_boxes.png
+2017/02/25 12:24:20 Загружается страница:	http://xkcd.com/1761
+2017/02/25 12:24:20 Загружается изображение:	http://imgs.xkcd.com/comics/blame.png
+2017/02/25 12:24:20 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/blame.png
+2017/02/25 12:24:20 Загружается страница:	http://xkcd.com/1760
+2017/02/25 12:24:20 Загружается изображение:	http://imgs.xkcd.com/comics/tv_problems.png
+2017/02/25 12:24:20 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/tv_problems.png
+2017/02/25 12:24:21 Загружается страница:	http://xkcd.com/1759
+2017/02/25 12:24:21 Загружается изображение:	http://imgs.xkcd.com/comics/british_map.png
+2017/02/25 12:24:21 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/british_map.png
+2017/02/25 12:24:22 Загружается страница:	http://xkcd.com/1758
+2017/02/25 12:24:22 Загружается изображение:	http://imgs.xkcd.com/comics/astrophysics.png
+2017/02/25 12:24:22 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/astrophysics.png
+2017/02/25 12:24:22 Загружается страница:	http://xkcd.com/1757
+2017/02/25 12:24:22 Загружается изображение:	http://imgs.xkcd.com/comics/november_2016.png
+2017/02/25 12:24:22 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/november_2016.png
+2017/02/25 12:24:23 Загружается страница:	http://xkcd.com/1756
+2017/02/25 12:24:23 Загружается изображение:	http://imgs.xkcd.com/comics/im_with_her.png
+2017/02/25 12:24:23 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/im_with_her.png
+2017/02/25 12:24:23 Загружается страница:	http://xkcd.com/1755
+2017/02/25 12:24:24 Загружается изображение:	http://imgs.xkcd.com/comics/old_days.png
+2017/02/25 12:24:24 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/old_days.png
+2017/02/25 12:24:24 Загружается страница:	http://xkcd.com/1754
+2017/02/25 12:24:24 Загружается изображение:	http://imgs.xkcd.com/comics/tornado_safety_tips.png
+2017/02/25 12:24:24 Сохрание в:	/home/dreddsa/go/src/github.com/dreddsa5dies/automateGo/src/11_07_downloadXkcd/xkcd/tornado_safety_tips.png
