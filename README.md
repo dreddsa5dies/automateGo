@@ -1,8 +1,9 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/dreddsa5dies/automateGo)](https://goreportcard.com/report/github.com/dreddsa5dies/automateGo) [![GORef](https://godoc.org/github.com/dreddsa5dies/automateGo?status.svg)](https://godoc.org/github.com/dreddsa5dies/automateGo)  
+[![Go Report Card](https://goreportcard.com/badge/github.com/dreddsa5dies/automateGo)](https://goreportcard.com/report/github.com/dreddsa5dies/automateGo) 
 
 ![IMAGE](img/automateGo.png)
 
-### Реализация на Go проектов части II книги "Автоматизация рутинных задач с помощью Python"
+## Реализация на Go проектов части II 
+## книги "Автоматизация рутинных задач с помощью Python"
 
 ## Формат записи:  
 * 07 - глава  
