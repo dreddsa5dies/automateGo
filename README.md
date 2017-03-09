@@ -2,13 +2,15 @@
 
 ![IMAGE](img/automateGo.png)
 
-## Реализация на Go проектов части II 
-## книги "Автоматизация рутинных задач с помощью Python"
+## Implementation on Go projects part II 
+## book "Automate the Boring Stuff with Python: Practical Programming for Total Beginners"
 
-## Формат записи:  
-* 07 - глава  
-* 01 - проект в главе  
-* ИМЯ - краткое наименование  
+## Recording format: 07_01_regexpMail  
+* 07 - chapter  
+* 01 - project in the chapter  
+* NAME - short title  
+
+## The code contains comments in Russian
 
 ## License
 This project is licensed under MIT license. Please read the LICENSE file.
