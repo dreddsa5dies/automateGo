@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	var s string
+	var s, latitude, longitude string
 	s = scan()
 	// Широта и долгота
 	resp, err := http.Get("https://geocode-maps.yandex.ru/1.x/?geocode=" + s)
@@ -26,8 +26,12 @@ func main() {
 	strFind = strings.TrimLeft(strFind, "<pos>")
 	strFind = strings.TrimRight(strFind, "</pos>")
 	strDATA := strings.Split(strFind, " ")
-	latitude := strDATA[0]
-	longitude := strDATA[1]
+	if len(strDATA) > 1 {
+		latitude = strDATA[0]
+		longitude = strDATA[1]
+	} else {
+		latitude, longitude = "неизвестно", "неизвестно"
+	}
 	fmt.Printf("Широта\t> %v\n", latitude)
 	fmt.Printf("Долгота\t> %v\n", longitude)
 }
