@@ -9,7 +9,7 @@ import (
 )
 
 var opts struct {
-	FileExel string `short:"o" long:"open" default:"/censuspopdata.xlsx" description:"Региональная численность населения"`
+	FileExel string `short:"o" long:"open" default:"censuspopdata.xlsx" description:"Региональная численность населения"`
 }
 
 func main() {
@@ -29,7 +29,7 @@ func main() {
 	// запись ошибок и инфы в файл
 	log.SetOutput(fLog)
 
-	excelFileName := pwdDir + opts.FileExel
+	excelFileName := pwdDir + "/" + opts.FileExel
 
 	log.Printf("Открытие рабочей книги: %v", excelFileName)
 
