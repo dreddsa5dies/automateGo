@@ -2,8 +2,7 @@
 
 ![IMAGE](img/automateGo.png)
 
-## Implementation on Go projects part II 
-## book "Automate the Boring Stuff with Python: Practical Programming for Total Beginners"
+## Implementation on Go projects  book "Automate the Boring Stuff with Python: Practical Programming for Total Beginners"
 
 ## Recording format: 07_01_regexpMail  
 * 07 - chapter  
