@@ -5,8 +5,6 @@ import (
 	"log"
 	"os"
 
-	"fmt"
-
 	flags "github.com/jessevdk/go-flags"
 	"github.com/tealeg/xlsx"
 )
@@ -31,6 +29,13 @@ func main() {
 
 	// запись ошибок и инфы в файл
 	log.SetOutput(fLog)
+
+	// создание файла записи итога
+	exitData, err := os.OpenFile(pwdDir+`/exitData.json`, os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0640)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	defer exitData.Close()
 
 	excelFileName := pwdDir + "/" + opts.FileExel
 
@@ -82,18 +87,29 @@ func main() {
 		// количество приписных районов
 		tractsdata[Key{nameStateStr, countryStr}]++
 	}
+	log.Println("Ожидание результата...")
 
 	type SaveData struct {
-		Name   Key     `json:"state, country name"`
+		Name   Key     `json:"state and country name"`
 		Pop    float64 `json:"populations"`
 		Tracts int     `json:"tracts"`
 	}
 
+	log.Printf("Запись в файл формата JSON %s", exitData.Name())
 	// подготовка к записи
-	saveData2D := &SaveData{
-		Name:   Key{"WY", "Sheridan"},
-		Pop:    popdata[Key{"WY", "Sheridan"}],
-		Tracts: tractsdata[Key{"WY", "Sheridan"}]}
-	saveData2B, _ := json.Marshal(saveData2D)
-	fmt.Println(string(saveData2B))
+	newStr := "\n"
+	for keys := range popdata {
+		saveData2D := &SaveData{
+			Name:   keys,
+			Pop:    popdata[keys],
+			Tracts: tractsdata[keys]}
+		saveData2B, _ := json.Marshal(saveData2D)
+		// добавляю символ новой строки
+		saveData2B = append(saveData2B, newStr...)
+		// запись в файл хранения
+		if _, err := exitData.Write(saveData2B); err != nil {
+			log.Panicf("Ошибка записи %v", err)
+		}
+	}
+	log.Println("Готово")
 }
