@@ -51,7 +51,9 @@ func main() {
 		State, Country string
 	}
 	popdata := make(map[Key]float64)
+	tractsdata := make(map[Key]int)
 
+	log.Println("Чтение строк...")
 	// до максимума строк пройти
 	for u := 1; u < k; u++ {
 		// получение данных ячеек формата *Cell
@@ -75,7 +77,11 @@ func main() {
 
 		// количество населения по районам
 		popdata[Key{nameStateStr, countryStr}] += popFl
+
+		// количество приписных районов
+		tractsdata[Key{nameStateStr, countryStr}]++
 	}
 
 	fmt.Println(popdata[Key{"WY", "Sheridan"}])
+	fmt.Println(tractsdata[Key{"WY", "Sheridan"}])
 }
