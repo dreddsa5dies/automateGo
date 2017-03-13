@@ -47,34 +47,35 @@ func main() {
 	k := sheet.MaxRow
 
 	// словарь для записи
-	type Data struct {
-		Pop, Tracts float64
+	type Key struct {
+		State, Country string
 	}
-	popdata := make(map[string]Data)
+	popdata := make(map[Key]float64)
 
 	// до максимума строк пройти
 	for u := 1; u < k; u++ {
 		// получение данных ячеек формата *Cell
 		state := sheet.Cell(u, 1)
-		// country := sheet.Cell(u, 2)
+		country := sheet.Cell(u, 2)
 		pop := sheet.Cell(u, 3)
 
 		// перевод *Cell  в нормальные значения
 		nameStateStr, err := state.String()
 		if err != nil {
-			log.Fatalf("Ошибка чтения %v", err)
+			log.Fatalf("Ошибка nameStateStr %v", err)
 		}
-		// countryStr, err := country.String()
-		// if err != nil {
-		// 	log.Fatalf("Ошибка чтения %v", err)
-		// }
+		countryStr, err := country.String()
+		if err != nil {
+			log.Fatalf("Ошибка countryStr %v", err)
+		}
 		popFl, err := pop.Float()
 		if err != nil {
-			log.Fatalf("Ошибка чтения %v", err)
+			log.Fatalf("Ошибка popFl %v", err)
 		}
 
-		popdata[nameStateStr] = Data{popFl, float64(u)}
+		// количество населения по районам
+		popdata[Key{nameStateStr, countryStr}] += popFl
 	}
 
-	fmt.Println(popdata["AK"])
+	fmt.Println(popdata[Key{"WY", "Sheridan"}])
 }
