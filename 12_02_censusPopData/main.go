@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"log"
 	"os"
 
@@ -82,6 +83,17 @@ func main() {
 		tractsdata[Key{nameStateStr, countryStr}]++
 	}
 
-	fmt.Println(popdata[Key{"WY", "Sheridan"}])
-	fmt.Println(tractsdata[Key{"WY", "Sheridan"}])
+	type SaveData struct {
+		Name   Key     `json:"state, country name"`
+		Pop    float64 `json:"populations"`
+		Tracts int     `json:"tracts"`
+	}
+
+	// подготовка к записи
+	saveData2D := &SaveData{
+		Name:   Key{"WY", "Sheridan"},
+		Pop:    popdata[Key{"WY", "Sheridan"}],
+		Tracts: tractsdata[Key{"WY", "Sheridan"}]}
+	saveData2B, _ := json.Marshal(saveData2D)
+	fmt.Println(string(saveData2B))
 }
