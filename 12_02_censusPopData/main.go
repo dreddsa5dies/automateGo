@@ -4,6 +4,8 @@ import (
 	"log"
 	"os"
 
+	"fmt"
+
 	flags "github.com/jessevdk/go-flags"
 	"github.com/tealeg/xlsx"
 )
@@ -40,4 +42,39 @@ func main() {
 
 	sheet := wb.Sheet["Population by Census Tract"]
 	log.Printf("Открытие страницы: %v", sheet.Name)
+
+	// сколько всего строк
+	k := sheet.MaxRow
+
+	// словарь для записи
+	type Data struct {
+		Pop, Tracts float64
+	}
+	popdata := make(map[string]Data)
+
+	// до максимума строк пройти
+	for u := 1; u < k; u++ {
+		// получение данных ячеек формата *Cell
+		state := sheet.Cell(u, 1)
+		// country := sheet.Cell(u, 2)
+		pop := sheet.Cell(u, 3)
+
+		// перевод *Cell  в нормальные значения
+		nameStateStr, err := state.String()
+		if err != nil {
+			log.Fatalf("Ошибка чтения %v", err)
+		}
+		// countryStr, err := country.String()
+		// if err != nil {
+		// 	log.Fatalf("Ошибка чтения %v", err)
+		// }
+		popFl, err := pop.Float()
+		if err != nil {
+			log.Fatalf("Ошибка чтения %v", err)
+		}
+
+		popdata[nameStateStr] = Data{popFl, float64(u)}
+	}
+
+	fmt.Println(popdata["AK"])
 }
