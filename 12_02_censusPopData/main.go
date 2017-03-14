@@ -11,6 +11,7 @@ import (
 
 var opts struct {
 	FileExel string `short:"o" long:"open" default:"censuspopdata.xlsx" description:"Региональная численность населения"`
+	FileJSON string `short:"s" long:"save" default:"exitData.json" description:"Региональная численность населения"`
 }
 
 func main() {
@@ -31,7 +32,7 @@ func main() {
 	log.SetOutput(fLog)
 
 	// создание файла записи итога
-	exitData, err := os.OpenFile(pwdDir+`/exitData.json`, os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0640)
+	exitData, err := os.OpenFile(pwdDir+`/`+opts.FileJSON, os.O_WRONLY|os.O_CREATE, 0640)
 	if err != nil {
 		log.Fatalln(err)
 	}
