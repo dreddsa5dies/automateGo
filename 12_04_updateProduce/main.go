@@ -48,6 +48,16 @@ func main() {
 	}
 
 	//TODO: создать цикл по сторкам и обновить цены
+	// в github.com/tealeg/xlsx все индексы и номера начинаются с 0
+	for rowNum := 1; rowNum < sheet.MaxRow; rowNum++ {
+		produceName := sheet.Cell(rowNum, 0).Value
+		if _, ok := priceUpdates[produceName]; ok {
+			sheet.Cell(rowNum, 1).SetFloat(priceUpdates[produceName])
+			log.Printf("Замена в строке %v начения для %v", rowNum, produceName)
+		}
+	}
+
+	wb.Save("update" + opts.FileXLSX)
 
 	// готово
 	log.Println("Готово")
