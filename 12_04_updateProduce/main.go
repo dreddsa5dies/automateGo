@@ -53,7 +53,7 @@ func main() {
 		produceName := sheet.Cell(rowNum, 0).Value
 		if _, ok := priceUpdates[produceName]; ok {
 			sheet.Cell(rowNum, 1).SetFloat(priceUpdates[produceName])
-			log.Printf("Замена в строке %v начения для %v", rowNum, produceName)
+			log.Printf("Замена в строке %v значения для %v", rowNum, produceName)
 		}
 	}
 
