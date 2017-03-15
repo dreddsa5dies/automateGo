@@ -1,4 +1,4 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/dreddsa5dies/automateGo)](https://goreportcard.com/report/github.com/dreddsa5dies/automateGo) 
+[![Go Report Card](https://goreportcard.com/badge/github.com/dreddsa5dies/automateGo)](https://goreportcard.com/report/github.com/dreddsa5dies/automateGo) ![License](https://img.shields.io/badge/License-MIT-blue.svg)  
 
 ![IMAGE](img/automateGo.png)
 
