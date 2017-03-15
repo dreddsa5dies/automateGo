@@ -36,6 +36,18 @@ func main() {
 	wb, err := xlsx.OpenFile(excelFileName)
 	if err != nil {
 		log.Fatalf("Ошибка открытия книги %v", err)
+	}
+
+	sheet := wb.Sheet["Sheet"]
+
+	// Типы продукции и их обновленные цены
+	priceUpdates := map[string]float64{
+		"Lemon":  3.07,
+		"Celery": 1.19,
+		"Garlic": 1.27,
+	}
+
+	//TODO: создать цикл по сторкам и обновить цены
 
 	// готово
 	log.Println("Готово")
