@@ -37,6 +37,25 @@ func main() {
 	var sheet *xlsx.Sheet
 	// строка
 	var row *xlsx.Row
+	// ячейка
+	var cell *xlsx.Cell
+	// стиль написания в ячейке
+	style := xlsx.NewStyle()
+
+	// обрамление
+	border := *xlsx.NewBorder("thin", "thin", "thin", "thin")
+	style.Border = border
+	style.ApplyBorder = true
+
+	// заливка
+	fill := *xlsx.NewFill("solid", "00FF0000", "FF000000")
+	style.Fill = fill
+	style.ApplyFill = true
+
+	// шрифт
+	font := *xlsx.NewFont(14, "Verdana")
+	style.Font = font
+	style.ApplyFont = true
 
 	// создаем новый файл
 	file = xlsx.NewFile()
@@ -52,16 +71,20 @@ func main() {
 		if i == 1 {
 			// создаем новую строку в странице
 			row = sheet.AddRow()
-			row.AddCell()
+			cell = row.AddCell()
 		}
 
-		row.AddCell().SetInt(i)
+		cell = row.AddCell()
+		cell.SetStyle(style)
+		cell.SetInt(i)
 	}
 
 	// добавляем ячейки в столбец (следуют одна за одной)
 	for i := 1; i <= opts.N; i++ {
 		row = sheet.AddRow()
-		row.AddCell().SetInt(i)
+		cell = row.AddCell()
+		cell.SetStyle(style)
+		cell.SetInt(i)
 	}
 
 	// сохранение
