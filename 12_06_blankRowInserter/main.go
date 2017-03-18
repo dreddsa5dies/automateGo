@@ -54,12 +54,18 @@ func main() {
 
 	// блок записи новых строк
 	for rowNum := 0; rowNum < i.MaxRow; rowNum++ {
-		// создаем овую строку в странице
-		row := sheet.AddRow()
-		log.Printf("Добавление строки %v", rowNum)
-		cells := rowsI[rowNum].Cells
-		for a := 0; a < len(cells); a++ {
-			row.AddCell().SetValue(cells[a].Value)
+		if rowNum != opts.M {
+			// создаем овую строку в странице
+			row := sheet.AddRow()
+			cells := rowsI[rowNum].Cells
+			for a := 0; a < len(cells); a++ {
+				row.AddCell().SetValue(cells[a].Value)
+			}
+		} else {
+			log.Printf("Добавление %v строк после строки №%v", opts.N, rowNum)
+			for j := 0; j < opts.N; j++ {
+				sheet.AddRow().AddCell()
+			}
 		}
 	}
 
