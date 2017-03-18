@@ -4,6 +4,8 @@ import (
 	"log"
 	"os"
 
+	"strconv"
+
 	flags "github.com/jessevdk/go-flags"
 	"github.com/tealeg/xlsx"
 )
@@ -53,7 +55,7 @@ func main() {
 	style.ApplyFill = true
 
 	// шрифт
-	font := *xlsx.NewFont(14, "Verdana")
+	font := *xlsx.NewFont(10, "Verdana")
 	style.Font = font
 	style.ApplyFont = true
 
@@ -85,6 +87,14 @@ func main() {
 		cell = row.AddCell()
 		cell.SetStyle(style)
 		cell.SetInt(i)
+	}
+
+	for i := 1; i <= opts.N; i++ {
+		for j := 1; j <= opts.N; j++ {
+			cell = sheet.Cell(i, j)
+			cell.SetInt(i * j)
+			log.Printf("Запись в %v", strconv.Itoa(i)+" * "+strconv.Itoa(j))
+		}
 	}
 
 	// сохранение
