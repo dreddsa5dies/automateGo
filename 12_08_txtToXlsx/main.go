@@ -58,6 +58,8 @@ func main() {
 	for _, fi := range fileInfos {
 		// проверка на .txt
 		if strings.HasSuffix(fi.Name(), ".txt") {
+			log.Printf("Считывание %v", fi.Name())
+			sheet.AddRow().AddCell().SetValue(fi.Name())
 			// построчное считывание
 			fileOpen, err := os.Open(fi.Name())
 			if err != nil {
@@ -65,6 +67,7 @@ func main() {
 			}
 			scanner := bufio.NewScanner(fileOpen)
 			for scanner.Scan() {
+				// TODO: запись всего считанного в файлах
 				// строки в 1й столбец
 				sheet.AddRow().AddCell().SetValue(scanner.Text())
 			}
@@ -74,7 +77,6 @@ func main() {
 			defer fileOpen.Close()
 		}
 	}
-	// TODO: запись всего считанного в файлах
 
 	// сохранение
 	err = file.Save(pwdDir + "/" + opts.FileSAVE)
