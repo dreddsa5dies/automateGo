@@ -1,0 +1,7 @@
+2.txt
+AAAAAA
+BBBBBB
+CCCCCC
+DDDDDD
+This my manifest
+
