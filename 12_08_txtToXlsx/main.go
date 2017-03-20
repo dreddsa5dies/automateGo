@@ -71,7 +71,7 @@ func main() {
 			var arr []string
 			scanner := bufio.NewScanner(fileOpen)
 			for scanner.Scan() {
-				// строки в 1й столбец
+				// строки в массив
 				arr = append(arr, scanner.Text())
 			}
 			if err := scanner.Err(); err != nil {
@@ -79,11 +79,27 @@ func main() {
 			}
 			defer fileOpen.Close()
 
+			// массив в hash
 			dataFiles[fi.Name()] = arr
 		}
 	}
 
 	// TODO: запись всего считанного в файлах
+	// счетчик для столбцов
+	i := 0
+	for keys, prs := range dataFiles {
+		// запись наименования файла в заголовок
+		sheet.Cell(0, i).SetValue(keys)
+		// запись в строку
+		// счетчик для строк
+		l := 1
+		for _, str := range prs {
+			// запись данных в строки столбцов
+			sheet.Cell(l, i).SetValue(str)
+			l++
+		}
+		i++
+	}
 
 	// сохранение
 	err = file.Save(pwdDir + "/" + opts.FileSAVE)
