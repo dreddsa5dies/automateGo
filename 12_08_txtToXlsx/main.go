@@ -54,29 +54,36 @@ func main() {
 		return
 	}
 
+	// хеш для хранения строк из файлов
+	dataFiles := make(map[string][]string)
+
 	// для всех файлов в папке
 	for _, fi := range fileInfos {
 		// проверка на .txt
 		if strings.HasSuffix(fi.Name(), ".txt") {
 			log.Printf("Считывание %v", fi.Name())
-			sheet.AddRow().AddCell().SetValue(fi.Name())
 			// построчное считывание
 			fileOpen, err := os.Open(fi.Name())
 			if err != nil {
 				log.Fatalln(err)
 			}
+			// массив для хранения строк
+			var arr []string
 			scanner := bufio.NewScanner(fileOpen)
 			for scanner.Scan() {
-				// TODO: запись всего считанного в файлах
 				// строки в 1й столбец
-				sheet.AddRow().AddCell().SetValue(scanner.Text())
+				arr = append(arr, scanner.Text())
 			}
 			if err := scanner.Err(); err != nil {
 				log.Fatal(err)
 			}
 			defer fileOpen.Close()
+
+			dataFiles[fi.Name()] = arr
 		}
 	}
+
+	// TODO: запись всего считанного в файлах
 
 	// сохранение
 	err = file.Save(pwdDir + "/" + opts.FileSAVE)
