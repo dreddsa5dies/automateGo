@@ -41,24 +41,30 @@ func main() {
 	pdf.AddPage()
 	pdf.SetFont("Arial", "B", 16)
 	pdf.Cell(40, 10, "combinePdfs")
+	log.Printf("Создание файла сохранения %v", "save.pdf")
 
 	for _, fi := range fileInfos {
 		// проверка на .pdf
 		if strings.HasSuffix(fi.Name(), ".pdf") {
+			log.Printf("Обработка %v", fi.Name())
 			r, err := pdfL.Open(fi.Name())
 			if err != nil {
 				log.Fatalln(err)
 			}
 			totalPage := r.NumPage()
+			log.Printf("Всего страниц %v", totalPage)
 
-			for pageIndex := 2; pageIndex <= totalPage; pageIndex++ {
+			for pageIndex := 1; pageIndex <= totalPage; pageIndex++ {
+				log.Printf("Обработка %v", pageIndex)
 				p := r.Page(pageIndex)
 				if p.V.IsNull() {
 					continue
 				}
 				// объединение PDF
+				// TODO: вставка данных из одной сраницы в другую
 				pdf.AddPage()
-				pdf.RawWriteStr(p.V.String())
+				pdf.SetFont("Arial", "B", 16)
+				pdf.Cell(40, 10, p.GetPlainText("\n"))
 			}
 		}
 	}
