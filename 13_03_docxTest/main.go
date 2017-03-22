@@ -52,6 +52,7 @@ func main() {
 		log.Fatalln(err)
 	}
 
+	// структуры для xml MS Word
 	type Body struct {
 		Paragraph []string `xml:"p>r>t"`
 	}
@@ -62,10 +63,12 @@ func main() {
 	}
 	var v Document
 
+	// выборка текста
 	err = xml.Unmarshal(b, &v)
 	if err != nil {
 		log.Fatalln(err)
 	}
 
+	// печать
 	fmt.Printf("Value: %v\n", v.Body.Paragraph)
 }
