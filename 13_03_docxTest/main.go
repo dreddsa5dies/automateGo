@@ -51,17 +51,21 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	fmt.Println(string(b))
 
-	type Result struct {
-		Value string `xml:"p>r>t"`
+	type Body struct {
+		Paragraph []string `xml:"p>r>t"`
 	}
-	v := Result{"none"}
+
+	type Document struct {
+		XMLName xml.Name `xml:"document"`
+		Body    Body     `xml:"body"`
+	}
+	var v Document
 
 	err = xml.Unmarshal(b, &v)
 	if err != nil {
 		log.Fatalln(err)
 	}
 
-	fmt.Printf("Value: %v\n", v.Value)
+	fmt.Printf("Value: %v\n", v.Body.Paragraph)
 }
