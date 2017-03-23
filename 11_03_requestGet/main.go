@@ -1,3 +1,4 @@
+//запрос данных веб-страницы
 package main
 
 import (
@@ -55,7 +56,7 @@ func main() {
 		// отложенное закрытие коннекта
 		defer resp.Body.Close()
 
-		// забись ответа в переменную
+		// запись ответа в переменную
 		body, err := ioutil.ReadAll(resp.Body)
 		check(err, fLog)
 

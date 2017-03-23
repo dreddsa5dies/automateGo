@@ -1,3 +1,4 @@
+// поиск в docx
 package main
 
 import (

@@ -1,3 +1,4 @@
+// генерация файлов
 package main
 
 import (

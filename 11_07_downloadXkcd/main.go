@@ -1,3 +1,4 @@
+//загружает комиксы XKCD.com
 package main
 
 import (

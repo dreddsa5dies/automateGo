@@ -1,3 +1,4 @@
+//запрос поиска Google
 package main
 
 import (

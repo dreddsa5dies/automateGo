@@ -1,3 +1,4 @@
+// замена колонок на с троки XLSX
 package main
 
 import (

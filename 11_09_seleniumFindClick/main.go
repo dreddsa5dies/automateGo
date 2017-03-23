@@ -1,3 +1,4 @@
+//Selenium click
 package main
 
 import (

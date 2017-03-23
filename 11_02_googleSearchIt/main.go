@@ -1,3 +1,4 @@
+//открытие браузера с поиском в google
 package main
 
 import (

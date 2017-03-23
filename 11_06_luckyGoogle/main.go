@@ -1,3 +1,4 @@
+// Открывает первые 5 результатов с помощью Google
 package main
 
 import (

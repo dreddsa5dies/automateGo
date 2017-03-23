@@ -1,3 +1,4 @@
+// поиск по регулярному выражению email
 package main
 
 import (

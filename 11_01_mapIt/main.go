@@ -1,3 +1,4 @@
+//Поиск в google Maps (для работы с буфером требуется xclip)
 package main
 
 import (

@@ -1,3 +1,4 @@
+// чтение и запись PDF
 package main
 
 import (
