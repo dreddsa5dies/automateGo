@@ -81,6 +81,8 @@ type CurrentWeatherData struct {
 	Name    string             `json:"name"`
 	Cod     string             `json:"cod"`
 	Unit    string
+	Lang    string
+	Key     string
 }
 
 func main() {
