@@ -47,7 +47,8 @@ func main() {
 		log.Fatalln("Ошибка декодирования")
 	}
 
-	log.Println(jsontype.Name)
+	log.Println(jsontype.Name.Country)
+	log.Println(jsontype.Name.State)
 	log.Println(jsontype.Pop)
 	log.Println(jsontype.Tracts)
 }
