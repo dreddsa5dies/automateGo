@@ -10,8 +10,6 @@ import (
 func main() {
 	// время начала
 	startTime := time.Now()
-
-	// время начала
 	prod := calcTime()
 
 	// время конца
