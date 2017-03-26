@@ -2,26 +2,12 @@
 package main
 
 import (
-	"log"
+	"fmt"
 	"math/big"
-	"os"
 	"time"
 )
 
 func main() {
-	// в какой папке исполняемый файл
-	pwdDir, _ := os.Getwd()
-
-	// создание файла log для записи ошибок
-	fLog, err := os.OpenFile(pwdDir+`/.log`, os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0640)
-	if err != nil {
-		log.Fatalln(err)
-	}
-	defer fLog.Close()
-
-	// запись ошибок и инфы в файл
-	log.SetOutput(fLog)
-
 	// время начала
 	startTime := time.Now()
 
@@ -32,10 +18,18 @@ func main() {
 	endTime := time.Now()
 
 	//приведение большого Int к строке и вычисление ее длины
-	log.Printf("Длина результата %v", len(prod.String()))
+	fmt.Printf("Длина результата %v\n", len(prod.String()))
 
 	// endTime.Sub(startTime).Seconds() - из конца вычитаем начало в формате секунд
-	log.Printf("Расчет по времени %1.3f сек.", endTime.Sub(startTime).Seconds())
+	fmt.Printf("Расчет по времени %1.3f сек.\n", endTime.Sub(startTime).Seconds())
+
+	// test задержки
+	for i := 0; i < 5; i++ {
+		fmt.Println("Тик")
+		time.Sleep(1 * time.Second)
+		fmt.Println("Так")
+		time.Sleep(1 * time.Second)
+	}
 }
 
 func calcTime() *big.Int {
