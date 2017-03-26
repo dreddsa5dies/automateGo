@@ -3,6 +3,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"math/big"
 	"time"
 )
@@ -15,11 +16,13 @@ func main() {
 	// время конца
 	endTime := time.Now()
 
+	ti := round(endTime.Sub(startTime).Seconds(), 3)
+
 	//приведение большого Int к строке и вычисление ее длины
 	fmt.Printf("Длина результата %v\n", len(prod.String()))
 
 	// endTime.Sub(startTime).Seconds() - из конца вычитаем начало в формате секунд
-	fmt.Printf("Расчет по времени %1.3f сек.\n", endTime.Sub(startTime).Seconds())
+	fmt.Printf("Расчет по времени %1.3f сек.\n", ti)
 
 	// test задержки
 	for i := 0; i < 5; i++ {
@@ -43,4 +46,19 @@ func calcTime() *big.Int {
 	}
 
 	return verybig
+}
+
+// функция округления
+func round(x float64, prec int) float64 {
+	var rounder float64
+	pow := math.Pow(10, float64(prec))
+	intermed := x * pow
+	_, frac := math.Modf(intermed)
+	if frac >= 0.5 {
+		rounder = math.Ceil(intermed)
+	} else {
+		rounder = math.Floor(intermed)
+	}
+
+	return rounder / pow
 }
