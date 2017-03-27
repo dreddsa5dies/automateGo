@@ -4,10 +4,31 @@ package main
 import (
 	"fmt"
 	"math"
+	"os"
+	"os/signal"
+	"syscall"
 	"time"
 )
 
+func cleanup() {
+	fmt.Println("Готово")
+}
+
 func main() {
+	c := make(chan os.Signal, 2)
+	signal.Notify(c, os.Interrupt, syscall.SIGTERM)
+	// перехват CTRL+C
+	go func() {
+		<-c
+		cleanup()
+		os.Exit(0)
+	}()
+
+	secundometr()
+}
+
+// функция секундометр
+func secundometr() {
 	println("Чтобы начать отсчет, нажмите ENTER.\nВпоследствии для имитации щелчков кнопки секундомера нажимайте клавишу ENTER.\nДля выхода из програмы нажмите клавиши CTRL+C")
 
 	fmt.Scanln()
@@ -25,8 +46,6 @@ func main() {
 		lapNum++
 		lastTime = time.Now()
 	}
-
-	// fmt.Println("Готово")
 }
 
 // функция округления
