@@ -11,7 +11,7 @@ import (
 )
 
 func cleanup() {
-	fmt.Println("Готово")
+	fmt.Println("\nГотово")
 }
 
 func main() {
