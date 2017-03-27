@@ -38,7 +38,6 @@ func main() {
 	if err != nil {
 		log.Fatalln("Ошибка открытия файла")
 	}
-	log.Println(data)
 
 	var jsontype SaveData
 	// только 1 строчку
@@ -51,4 +50,19 @@ func main() {
 	log.Println(jsontype.Name.State)
 	log.Println(jsontype.Pop)
 	log.Println(jsontype.Tracts)
+
+	type noAll struct {
+		Pop    float64 `json:"populations"`
+		Tracts int     `json:"tracts"`
+	}
+
+	var jsont noAll
+	// только 1 строчку
+	err = json.Unmarshal(data, &jsont)
+	if err != nil {
+		log.Fatalln("Ошибка декодирования")
+	}
+
+	log.Println(jsont.Pop)
+	log.Println(jsont.Tracts)
 }
