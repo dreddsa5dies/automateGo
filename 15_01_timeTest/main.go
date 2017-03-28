@@ -31,6 +31,29 @@ func main() {
 		fmt.Println("Так")
 		time.Sleep(1 * time.Second)
 	}
+
+	// получение даты
+	year, mounth, day := time.Now().Date()
+	fmt.Println(year, mounth.String(), day)
+
+	// сравнение указанной даты и текущей
+	halloween2017 := time.Date(2017, 10, 31, 0, 0, 0, 0, time.Local)
+	// до тех пор пока Хэллоуин не наступит
+	for halloween2017.Before(time.Now()) {
+		fmt.Println("ok")
+		time.Sleep(time.Second * 1)
+	}
+
+	// преобразование даты в строки
+	println(halloween2017.Format("2006-01-02"))
+	// 01 - месяц, 02 - день, 2006 - год
+	println(halloween2017.Format("01.02.2006"))
+
+	// преобразование строки в дату
+	dataTime := "2015.03.11"
+	dateParse, _ := time.Parse("2006.01.02", dataTime)
+	fmt.Println(dateParse)
+	fmt.Println(dateParse.Month().String())
 }
 
 func calcTime() *big.Int {
