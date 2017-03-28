@@ -28,13 +28,13 @@ func main() {
 	fmt.Println(string(lsOut))
 
 	// поиск исполняемого файла
-	binary, lookErr := exec.LookPath("ls")
+	binary, lookErr := exec.LookPath("code")
 	if lookErr != nil {
 		panic(lookErr)
 	}
 	println(binary)
 
-	args := []string{"ls", "-l"}
+	args := []string{"code"}
 
 	env := os.Environ()
 
