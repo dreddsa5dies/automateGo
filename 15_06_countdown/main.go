@@ -4,6 +4,7 @@ package main
 import (
 	"os"
 	"os/exec"
+	"strconv"
 	"syscall"
 	"time"
 )
@@ -12,10 +13,11 @@ func main() {
 	timeLeft := 2
 
 	for timeLeft > 0 {
-		println(timeLeft)
+		print(strconv.Itoa(timeLeft) + " ")
 		time.Sleep(time.Second * 1)
 		timeLeft--
 	}
+	print("\n")
 
 	// поиск исполняемого файла
 	binary, lookErr := exec.LookPath("cvlc")
