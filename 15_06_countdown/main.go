@@ -18,13 +18,13 @@ func main() {
 	}
 
 	// поиск исполняемого файла
-	binary, lookErr := exec.LookPath("mpg123")
+	binary, lookErr := exec.LookPath("cvlc")
 	if lookErr != nil {
 		panic(lookErr)
 	}
 
 	// аргументы, обязательно вызываемый бинарник указывать
-	args := []string{"mpg123", "alarm.wav"}
+	args := []string{"cvlc", "alarm.wav"}
 
 	env := os.Environ()
 
