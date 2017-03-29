@@ -2,7 +2,9 @@
 package main
 
 import (
+	"io/ioutil"
 	"log"
+	"net/mail"
 
 	"github.com/emersion/go-imap"
 	"github.com/emersion/go-imap/client"
@@ -48,32 +50,49 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Println("Flags for INBOX:", mbox.Flags)
+	// log.Println("Flags for INBOX:", mbox.Flags)
 
-	// Последние 4 сообщения
-	from := uint32(1)
-	to := mbox.Messages
-	if mbox.Messages > 3 {
-		from = mbox.Messages - 3
+	// Получение последнего сообщения
+	if mbox.Messages == 0 {
+		log.Fatal("No message in mailbox")
 	}
 	seqset := new(imap.SeqSet)
-	seqset.AddRange(from, to)
+	seqset.AddRange(mbox.Messages, mbox.Messages)
 
-	messages := make(chan *imap.Message, 10)
+	// Получеие всех данных
+	attrs := []string{"BODY[]"}
+
+	messages := make(chan *imap.Message, 1)
 	done = make(chan error, 1)
 	go func() {
-		done <- c.Fetch(seqset, []string{imap.EnvelopeMsgAttr}, messages)
+		done <- c.Fetch(seqset, attrs, messages)
 	}()
 
-	log.Println("Last 4 messages:")
-	for msg := range messages {
-		log.Println("* " + msg.Envelope.Subject)
-		// текст сообщения
+	log.Println("Last message:")
+	msg := <-messages
+	r := msg.GetBody("BODY[]")
+	if r == nil {
+		log.Fatal("Server didn't returned message body")
 	}
 
 	if err := <-done; err != nil {
 		log.Fatal(err)
 	}
 
-	log.Println("Done!")
+	m, err := mail.ReadMessage(r)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	header := m.Header
+	log.Println("Date:", header.Get("Date"))
+	log.Println("From:", header.Get("From"))
+	log.Println("To:", header.Get("To"))
+	log.Println("Subject:", header.Get("Subject"))
+
+	body, err := ioutil.ReadAll(m.Body)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Println(string(body))
 }
