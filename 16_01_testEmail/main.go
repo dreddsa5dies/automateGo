@@ -1,4 +1,4 @@
-// smtp + ssl (для Google)
+// smtp + ssl (для Google - 500 сообщений в день)
 package main
 
 import (
@@ -12,8 +12,8 @@ import (
 
 func main() {
 	// от кого кому и что
-	from := mail.Address{"gotestsmtp", "gotestsmtp@gmail.com"}
-	to := mail.Address{"gotest", "gotest@lenta.ru"}
+	from := mail.Address{Name: "gotestsmtp", Address: "gotestsmtp@gmail.com"}
+	to := mail.Address{Name: "gotest", Address: "gotest@lenta.ru"}
 
 	body := "this is the body line1.\nthis is the body line2.\nthis is the body line3.\n"
 	subject := "Тестовое Golang"
