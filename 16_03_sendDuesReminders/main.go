@@ -42,8 +42,18 @@ func main() {
 		log.Printf("Крайний месяц: %v", latestMonth.Value)
 
 		// TODO: Проверить состояние уплаты взносов для каждого члена клуба
+		// опрделение заполненных строк
+		var maxRows int
+		for r := 0; r <= sheet.MaxRow; r++ {
+			c := sheet.Cell(r, 0).Value
+			if c == "" {
+				break
+			}
+			maxRows++
+		}
+		// заполнение карты
 		unpaidMembers := make(map[string]string)
-		for r := 2; r <= sheet.MaxRow; r++ {
+		for r := 2; r < maxRows; r++ {
 			payment := sheet.Cell(r, lastCol).Value
 			if payment != "paid" {
 				name := sheet.Cell(r, 0).Value
