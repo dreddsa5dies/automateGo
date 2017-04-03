@@ -89,4 +89,28 @@ func main() {
 	png.Encode(out, rgba)
 	log.Printf("Записано в: %v", out.Name())
 
+	// заполнение вырезанным изображением
+	catImg, err := os.Open("./zophie.png")
+	if err != nil {
+		log.Fatalf("Ошибка открытия файла %v", err)
+	}
+	defer catImg.Close()
+	log.Printf("Открытие файла: %v", catImg.Name())
+	catImage, _, err := image.Decode(catImg)
+	if err != nil {
+		log.Panicf("Ошибка декодирования изображения %v", err)
+	}
+	catImWidth := catImage.Bounds().Size().X
+	catImHeight := catImage.Bounds().Size().Y
+	faceIm := image.NewNRGBA(image.Rect(0, 0, catImWidth, catImHeight))
+	for left := 0; left < catImWidth; left += catImWidth / 2 {
+		for top := 0; top < catImHeight; top += catImHeight / 2 {
+			println(left, top)
+			draw.Draw(faceIm, faceIm.Bounds(), catImage, image.Point{left, top}, draw.Src)
+		}
+	}
+	topng, _ := os.Create("./copyTo.png")
+	defer topng.Close()
+	png.Encode(topng, faceIm)
+	log.Printf("Записано в: %v", topng.Name())
 }
