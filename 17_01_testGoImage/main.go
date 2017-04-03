@@ -103,8 +103,8 @@ func main() {
 	catImWidth := catImage.Bounds().Size().X
 	catImHeight := catImage.Bounds().Size().Y
 	faceIm := image.NewNRGBA(image.Rect(0, 0, catImWidth, catImHeight))
-	for left := 0; left < catImWidth; left += catImWidth / 2 {
-		for top := 0; top < catImHeight; top += catImHeight / 2 {
+	for left := 0; left < catImWidth; left += catImWidth / 4 {
+		for top := 0; top < catImHeight; top += catImHeight / 4 {
 			println(left, top)
 			draw.Draw(faceIm, faceIm.Bounds(), catImage, image.Point{left, top}, draw.Src)
 		}
