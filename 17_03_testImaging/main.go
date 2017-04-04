@@ -95,4 +95,19 @@ func main() {
 	if err != nil {
 		log.Fatalf("Save failed: %v", err)
 	}
+
+	// проход по pixel
+	pixels := imaging.New(100, 100, color.NRGBA{0, 0, 0, 0})
+	for i := 0; i < 100; i++ {
+		for j := 0; j < 50; j++ {
+			pixels.SetNRGBA(i, j, color.NRGBA{0, 100, 100, 255})
+		}
+		for j := 50; j < 100; j++ {
+			pixels.SetNRGBA(i, j, color.NRGBA{100, 100, 0, 100})
+		}
+	}
+	err = imaging.Save(pixels, "./pixels.png")
+	if err != nil {
+		log.Fatalf("Save failed: %v", err)
+	}
 }
