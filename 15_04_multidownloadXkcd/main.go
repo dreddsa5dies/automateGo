@@ -9,7 +9,6 @@ import (
 	"net/http"
 	"os"
 	"regexp"
-	"sync"
 	"time"
 
 	"strings"
@@ -92,69 +91,64 @@ func main() {
 		massUrls = append(massUrls, url+"/"+strconv.Itoa(k))
 	}
 
-	// TODO: многопоточность
-	byteResponse := make(chan []byte)
-	var wg sync.WaitGroup
-	// обязательно ожидание всех горутин
-	wg.Add(len(massUrls))
-	for _, urls := range massUrls {
-		go func(urls string) {
-			defer wg.Done()
-			resp, err := http.Get(urls)
-			log.Printf("Загружается страница:	%v", urls)
-			if err != nil {
-				log.Fatalln(err)
-			}
-
-			// TODO: Найти URL комикса
-			// парсинг ответа
-			x, err := goquery.Parse(resp.Body)
-			if err != nil {
-				log.Fatalln(err)
-			}
-			resp.Body.Close()
-
-			// нахождение ссылки
-			regStr, _ := regexp.Compile(`comics`)
-			for _, i := range x.Find("img").Attrs("src") {
-				if regStr.MatchString(i) {
-					// TODO: Загрузить комикс
-					respImg, err := http.Get("http:" + i)
-					log.Printf("Загружается изображение:	%v", "http:"+i)
-					if err != nil {
-						log.Fatalln(err)
-					}
-
-					// запись ответа в переменную
-					bodyImg, err := ioutil.ReadAll(respImg.Body)
-					if err != nil {
-						log.Fatalln(err)
-					}
-
-					respImg.Body.Close()
-
-					byteResponse <- bodyImg
-				}
-			}
-
-			time.Sleep(3 * time.Second)
-		}(urls)
+	// многопоточность
+	i := 0
+	for i < len(massUrls) {
+		urls := massUrls[i : i+5]
+		for _, url := range urls {
+			go downloads(url)
+		}
+		i = i + 5
+		time.Sleep(10 * time.Second)
 	}
 
-	go func() {
-		for response := range byteResponse {
+	log.Println("Готово")
+}
+
+func downloads(urls string) {
+	resp, err := http.Get(urls)
+	log.Printf("Загружается страница:	%v", urls)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	defer resp.Body.Close()
+
+	// Найти URL комикса
+	// парсинг ответа
+	x, err := goquery.Parse(resp.Body)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	// нахождение ссылки
+	regStr, _ := regexp.Compile(`comics`)
+	for _, i := range x.Find("img").Attrs("src") {
+		if regStr.MatchString(i) {
+			// TODO: Загрузить комикс
+			respImg, err := http.Get("http:" + i)
+			log.Printf("Загружается изображение:	%v", "http:"+i)
+			if err != nil {
+				log.Fatalln(err)
+			}
+			defer respImg.Body.Close()
+
+			// запись ответа в переменную
+			bodyImg, err := ioutil.ReadAll(respImg.Body)
+			if err != nil {
+				log.Fatalln(err)
+			}
+
 			// создание файла для загрузки картинки
-			name := "./xkcd/" + time.Now().String() + ".png"
-			fSave, err := os.OpenFile(name, os.O_CREATE|os.O_WRONLY, 0640)
+			nameImg := strings.Split(i, "/")
+			name := "./xkcd/" + nameImg[len(nameImg)-1]
+			fSave, err := os.Create(name)
 			if err != nil {
 				log.Fatalln(err)
 			}
 			defer fSave.Close()
 			log.Printf("Сохрание в:	%v", name)
-			fSave.Write(response)
+			fSave.Write(bodyImg)
 		}
-	}()
-	wg.Wait()
-
-	log.Println("Готово")
+	}
+	time.Sleep(5 * time.Second)
 }
