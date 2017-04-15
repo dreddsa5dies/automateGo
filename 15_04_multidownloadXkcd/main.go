@@ -2,6 +2,8 @@
 package main
 
 import (
+	"flag"
+	"io"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -19,26 +21,36 @@ import (
 	"github.com/opesun/goquery"
 )
 
+var (
+	golog bool
+)
+
+func init() {
+	flag.BoolVar(&golog, "log", false, "Use logfile")
+}
+
 func main() {
-	// в какой папке исполняемый файл
-	pwdDir, _ := os.Getwd()
+	// разбор флагов
+	flag.Parse()
 
-	// создание файла log для записи ошибок
-	fLog, err := os.OpenFile(pwdDir+`/.log`, os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0640)
-	if err != nil {
-		log.Fatalln(err)
+	if golog {
+		// создание файла log для записи ошибок
+		fLog, err := os.OpenFile(`./.log`, os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0640)
+		if err != nil {
+			log.Fatalln(err)
+		}
+		defer fLog.Close()
+
+		// запись ошибок и инфы в файл и вывод
+		log.SetOutput(io.MultiWriter(fLog, os.Stdout))
 	}
-	defer fLog.Close()
-
-	// запись ошибок и инфы в файл
-	log.SetOutput(fLog)
 
 	// исходный url
 	url := `http://xkcd.com`
 
-	err = os.Mkdir(pwdDir+"/xkcd", 0775)
+	err := os.Mkdir("./xkcd", 0775)
 	if err != nil {
-		log.Fatalln(err)
+		log.Println(err)
 	}
 
 	// TODO: Загрузить страницу
@@ -48,8 +60,6 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	// отложенное закрытие коннекта
-	defer resp.Body.Close()
 
 	// TODO: Найти URL комикса
 	// парсинг ответа
@@ -57,6 +67,7 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
+	resp.Body.Close()
 
 	// TODO: Получить URL для prev
 	// ищу ссылочки на старые комиксы
@@ -94,7 +105,6 @@ func main() {
 			if err != nil {
 				log.Fatalln(err)
 			}
-			defer resp.Body.Close()
 
 			// TODO: Найти URL комикса
 			// парсинг ответа
@@ -102,6 +112,8 @@ func main() {
 			if err != nil {
 				log.Fatalln(err)
 			}
+			resp.Body.Close()
+
 			// нахождение ссылки
 			regStr, _ := regexp.Compile(`comics`)
 			for _, i := range x.Find("img").Attrs("src") {
@@ -112,8 +124,6 @@ func main() {
 					if err != nil {
 						log.Fatalln(err)
 					}
-					// отложенное закрытие коннекта
-					defer respImg.Body.Close()
 
 					// запись ответа в переменную
 					bodyImg, err := ioutil.ReadAll(respImg.Body)
@@ -121,18 +131,20 @@ func main() {
 						log.Fatalln(err)
 					}
 
+					respImg.Body.Close()
+
 					byteResponse <- bodyImg
 				}
 			}
 
-			time.Sleep(100 * time.Millisecond)
+			time.Sleep(3 * time.Second)
 		}(urls)
 	}
 
 	go func() {
 		for response := range byteResponse {
 			// создание файла для загрузки картинки
-			name := pwdDir + "/xkcd/" + time.Now().String() + ".png"
+			name := "./xkcd/" + time.Now().String() + ".png"
 			fSave, err := os.OpenFile(name, os.O_CREATE|os.O_WRONLY, 0640)
 			if err != nil {
 				log.Fatalln(err)
