@@ -3,70 +3,84 @@ package main
 
 import (
 	"encoding/json"
+	"flag"
+	"fmt"
+	"io"
+	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
-	"reflect"
-
-	"fmt"
-
-	flags "github.com/jessevdk/go-flags"
 )
 
-var opts struct {
-	Location string `short:"l" long:"location" default:"London" description:"Название населенного пункта"`
+var (
+	golog    bool
+	location string
+)
+
+func init() {
+	flag.BoolVar(&golog, "log", false, "Use logfile")
+
+	flag.StringVar(&location, "location", "London", "Location")
 }
 
 func main() {
 	// разбор флагов
-	flags.Parse(&opts)
+	flag.Parse()
 
-	// в какой папке исполняемый файл
-	pwdDir, _ := os.Getwd()
+	if golog {
+		// создание файла log для записи ошибок
+		fLog, err := os.OpenFile(`./.log`, os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0640)
+		if err != nil {
+			log.Fatalln(err)
+		}
+		defer fLog.Close()
 
-	// создание файла log для записи ошибок
-	fLog, err := os.OpenFile(pwdDir+`/.log`, os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0640)
-	if err != nil {
-		log.Fatalln(err)
+		// запись ошибок и инфы в файл и вывод
+		log.SetOutput(io.MultiWriter(fLog, os.Stdout))
 	}
-	defer fLog.Close()
-
-	// формат вывода log
-	logger := log.New(fLog, "testJSON ", log.LstdFlags|log.Lshortfile)
 
 	// GET API + key
-	url := `http://api.openweathermap.org/data/2.5/forecast/city?q=` + opts.Location + `&APPID=109900a006b21159601c9b503d7c419c`
+	url := `http://api.openweathermap.org/data/2.5/weather?q=` + location + `&appid=109900a006b21159601c9b503d7c419c`
+	log.Printf("url = %v", url)
+	// test
+	// url := `http://samples.openweathermap.org/data/2.5/forecast?q=London&appid=b1b15e88fa797225412429c1c50c122a1`
 
 	// обращение к API
 	resp, err := http.Get(url)
 	if err != nil {
-		logger.Fatalln(err)
-	}
-	defer resp.Body.Close()
-
-	// создание переменной для хранения ответа
-	// необходимо составлять структуру для хранения ответа
-	// долго копался и лень все описывать, поэтому встречайте
-	p := make(map[string]interface{})
-
-	// декодирование ответа API
-	if err = json.NewDecoder(resp.Body).Decode(&p); err != nil {
 		log.Fatalln(err)
 	}
-	w := p["list"]
+	defer resp.Body.Close()
+	log.Printf("status response = %v", resp.Status)
 
-	// заморочки с интерфейсами
-	s := reflect.ValueOf(w)
-	if s.Kind() != reflect.Slice {
-		panic("InterfaceSlice() given a non-slice type")
+	// запись ответа в переменную
+	body, err := ioutil.ReadAll(resp.Body)
+
+	// создание переменной для хранения ответа
+	// если структура ответа неизвестна
+	var p map[string]interface{}
+
+	// декодирование []byte в интерфейс
+	err = json.Unmarshal(body, &p)
+	if err != nil {
+		log.Println(err)
+		os.Exit(1)
 	}
 
-	ret := make([]interface{}, s.Len())
+	s := p["weather"].([]interface{})
+	ss := s[0].(map[string]interface{})
+	fmt.Println("Погода сегодня в " + location + ":")
+	fmt.Printf("%v - %v\n", ss["main"], ss["description"])
 
-	for i := 0; i < s.Len(); i++ {
-		ret[i] = s.Index(i).Interface()
-	}
-	for i := 0; i < len(ret); i++ {
-		fmt.Println(ret[i])
-	}
+	// для тестового работает
+	/*
+		s := p["list"].([]interface{})
+		ss := s[0].(map[string]interface{})
+		sss := ss["weather"].([]interface{})
+		ssss := sss[0].(map[string]interface{})
+
+		fmt.Println("Погода сегодня в " + location + ":")
+		fmt.Printf("%v - %v\n", ssss["main"], ssss["description"])
+	*/
+
 }
