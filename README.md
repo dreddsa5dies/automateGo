@@ -13,6 +13,7 @@
 
 ## Install
 ```bash
+sudo apt-get install xclip
 git clone github.com/dreddsa5dies/automateGo
 go get -v github.com/atotto/clipboard github.com/toqueteos/webbrowser github.com/jackdanger/collectlinks github.com/opesun/goquery github.com/disintegration/imaging github.com/jessevdk/go-flags github.com/anthonynsimon/bild/imgio github.com/anthonynsimon/bild/transform github.com/sfreiberg/gotwilio github.com/tealeg/xlsx github.com/emersion/go-imap github.com/emersion/go-imap/client github.com/jung-kurt/gofpdf github.com/ledongthuc/pdf github.com/tebeka/selenium
 ```
