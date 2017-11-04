@@ -11,12 +11,11 @@ import (
 )
 
 func main() {
-	// создание шаблонов регулярных выражений
-	// email regex
+	// create email regexp
 	regMail, _ := regexp.Compile(`[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}`)
 
-	// чтение из буфера
-	// поиск по шаблонам и добавление в срез
+	// read os buffer
+	// find email regexp
 	text, _ := clipboard.ReadAll()
 	var mailAddr []string
 
@@ -24,7 +23,7 @@ func main() {
 		mailAddr = regMail.FindAllString(text, -1)
 	}
 
-	// запись среза в буфер обмена
+	// write on os buffer
 	if len(mailAddr) > 0 {
 		clipboard.WriteAll(strings.Join(mailAddr, "\n"))
 		fmt.Println("Copied to clipboard:")

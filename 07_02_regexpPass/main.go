@@ -5,23 +5,26 @@ import (
 	"fmt"
 	"os"
 	"regexp"
+
+	"flag"
 )
 
 func main() {
-	if len(os.Args) != 2 {
-		fmt.Fprintf(os.Stderr, "Использование: %s password\n", os.Args[0])
-		os.Exit(1)
-	}
-
-	s := os.Args[1]
-
-	regStr, _ := regexp.Compile(`([0-9a-zA-Z]){8,}`)
-
-	if regStr.MatchString(s) {
-		fmt.Println("Pass ok")
+	if len(os.Args) < 2 {
+		fmt.Printf("Usage: %s -h\n", os.Args[0])
 	} else {
-		fmt.Println("Bad pass")
-	}
+		pass := flag.String("p", "", "get password")
 
-	os.Exit(0)
+		flag.Parse()
+
+		regStr, _ := regexp.Compile(`([0-9a-zA-Z]){8,}`)
+
+		if regStr.MatchString(*pass) {
+			fmt.Println("Pass ok")
+		} else {
+			fmt.Println("Bad pass")
+		}
+
+		os.Exit(0)
+	}
 }
