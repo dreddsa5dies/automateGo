@@ -23,12 +23,7 @@ github.com/schollz/progressbar
 ```
 
 ## License
-This project is licensed under MIT license. Please read the LICENSE file.
+This project is licensed under MIT license. Please read the [LICENSE](https://github.com/dreddsa5dies/automateGo/tree/master/LICENSE.md) file.
 
 ## Contribute
-Welcomes any kind of contribution, please follow the next steps:
-
-- Fork the project on github.com.
-- Create a new branch.
-- Commit changes to the new branch.
-- Send a pull request.
+Welcomes any kind of contribution. Please read the [CONTRIBUTING](https://github.com/dreddsa5dies/automateGo/tree/master/CONTRIBUTING.md) and [CODE_OF_CONDUCT](https://github.com/dreddsa5dies/automateGo/tree/master/CODE_OF_CONDUCT.md) file.  
