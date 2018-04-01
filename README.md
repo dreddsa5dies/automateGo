@@ -1,6 +1,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/dreddsa5dies/automateGo)](https://goreportcard.com/report/github.com/dreddsa5dies/automateGo) ![License](https://img.shields.io/badge/License-MIT-blue.svg)  
 
-![IMAGE](img/automateGo.png)
+![IMAGE](img/automateGo.png)  
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/GDNsM0F)
 
 ## Implementation on Go projects  book "Automate the Boring Stuff with Python: Practical Programming for Total Beginners"
 
@@ -22,12 +23,7 @@ github.com/schollz/progressbar
 ```
 
 ## License
-This project is licensed under MIT license. Please read the LICENSE file.
+This project is licensed under MIT license. Please read the [LICENSE](https://github.com/dreddsa5dies/automateGo/tree/master/LICENSE.md) file.
 
 ## Contribute
-Welcomes any kind of contribution, please follow the next steps:
-
-- Fork the project on github.com.
-- Create a new branch.
-- Commit changes to the new branch.
-- Send a pull request.
+Welcomes any kind of contribution. Please read the [CONTRIBUTING](https://github.com/dreddsa5dies/automateGo/tree/master/CONTRIBUTING.md) and [CODE_OF_CONDUCT](https://github.com/dreddsa5dies/automateGo/tree/master/CODE_OF_CONDUCT.md) file.  
