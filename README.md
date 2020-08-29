@@ -24,3 +24,5 @@ This project is licensed under MIT license. Please read the [LICENSE](https://gi
 
 ## Contribute
 Welcomes any kind of contribution. Please read the [CONTRIBUTING](https://github.com/dreddsa5dies/automateGo/tree/master/CONTRIBUTING.md) and [CODE_OF_CONDUCT](https://github.com/dreddsa5dies/automateGo/tree/master/CODE_OF_CONDUCT.md) file.  
+
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=dreddsa5dies)](https://github.com/anuraghazra/github-readme-stats)
