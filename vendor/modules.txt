@@ -1,0 +1,80 @@
+# github.com/anthonynsimon/bild v0.10.0
+## explicit
+github.com/anthonynsimon/bild/clone
+github.com/anthonynsimon/bild/imgio
+github.com/anthonynsimon/bild/math/f64
+github.com/anthonynsimon/bild/parallel
+github.com/anthonynsimon/bild/transform
+# github.com/atotto/clipboard v0.1.0
+## explicit
+github.com/atotto/clipboard
+# github.com/boombuler/barcode v1.0.0
+## explicit
+github.com/boombuler/barcode
+github.com/boombuler/barcode/qr
+github.com/boombuler/barcode/utils
+# github.com/disintegration/imaging v1.4.2
+## explicit
+github.com/disintegration/imaging
+# github.com/emersion/go-imap v0.0.0-20170422081100-840b16b212bf
+## explicit
+github.com/emersion/go-imap
+github.com/emersion/go-imap/client
+github.com/emersion/go-imap/commands
+github.com/emersion/go-imap/responses
+github.com/emersion/go-imap/utf7
+# github.com/emersion/go-sasl v0.0.0-20161116183048-7e096a0a6197
+## explicit
+github.com/emersion/go-sasl
+# github.com/gen2brain/go-fitz v0.0.0-20180416170014-297d6b608808
+## explicit
+github.com/gen2brain/go-fitz
+# github.com/gorilla/schema v1.0.2
+## explicit
+github.com/gorilla/schema
+# github.com/jackdanger/collectlinks v0.0.0-20160421202702-24c4ee2870ba
+## explicit
+github.com/jackdanger/collectlinks
+# github.com/jessevdk/go-flags v1.4.0
+## explicit
+github.com/jessevdk/go-flags
+# github.com/jung-kurt/gofpdf v1.0.0
+## explicit
+github.com/jung-kurt/gofpdf
+# github.com/ledongthuc/pdf v0.0.0-20180327031746-fb84fa0e709b
+## explicit
+github.com/ledongthuc/pdf
+# github.com/opesun/goquery v0.0.0-20160908163916-0d77e43213cd
+## explicit
+github.com/opesun/goquery
+github.com/opesun/goquery/exp/html
+github.com/opesun/goquery/exp/html/atom
+# github.com/schollz/progressbar v1.0.0
+## explicit
+github.com/schollz/progressbar
+# github.com/sfreiberg/gotwilio v0.0.0-20180526023001-a02aa7828f53
+## explicit
+github.com/sfreiberg/gotwilio
+# github.com/tealeg/xlsx v1.0.3
+## explicit
+github.com/tealeg/xlsx
+# github.com/tebeka/selenium v0.9.3
+## explicit
+github.com/tebeka/selenium
+# github.com/toqueteos/webbrowser v1.1.0
+## explicit
+github.com/toqueteos/webbrowser
+# golang.org/x/image v0.0.0-20180601115456-af66defab954
+## explicit
+golang.org/x/image/bmp
+golang.org/x/image/tiff
+golang.org/x/image/tiff/lzw
+# golang.org/x/net v0.0.0-20180530234432-1e491301e022
+## explicit
+golang.org/x/net/html
+golang.org/x/net/html/atom
+# golang.org/x/text v0.3.0
+## explicit
+golang.org/x/text/encoding
+golang.org/x/text/encoding/internal/identifier
+golang.org/x/text/transform
