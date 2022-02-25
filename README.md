@@ -4,7 +4,7 @@
 
 ## Implementation on Go projects  book "Automate the Boring Stuff with Python: Practical Programming for Total Beginners"
 
-## Recording format: 07_01_regexpMail  
+## Recording format: projects/07_01_regexpMail  
 * 07 - chapter  
 * 01 - project in the chapter  
 * NAME - short title  
@@ -12,7 +12,7 @@
 ## The code contains comments in Russian
 
 ## Install
-Use [dep](https://github.com/golang/dep/cmd/dep)  
+Use [go mod](https://go.dev/ref/mod)  
 ```bash
 sudo apt-get install xclip
 git clone github.com/dreddsa5dies/automateGo
