@@ -61,7 +61,7 @@ func main() {
 			// по столбцу l
 			sd := i.Cell(u, l)
 			// и вывести как строку
-			ss, _ := sd.String()
+			ss := sd.String()
 			// добавить в ячейку нового файла
 			sheetRow.AddCell().SetValue(ss)
 		}
