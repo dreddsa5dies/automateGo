@@ -62,13 +62,17 @@ func main() {
 					continue
 				}
 				// объединение PDF
-				// TODO: вставка данных из одной сраницы в другую
+				// TODO: вставка данных из одной страницы в другую
 				pdf.AddPage()
 				pdf.SetFont("Arial", "B", 16)
-				pdf.Cell(40, 10, p.GetPlainText("\n"))
+				t := p.Content().Text
+				for i := range t {
+					pdf.Cell(40, 10, t[i].S)
+				}
+
 			}
 		}
 	}
 
-	err = pdf.OutputFileAndClose("save.pdf")
+	_ = pdf.OutputFileAndClose("save.pdf")
 }

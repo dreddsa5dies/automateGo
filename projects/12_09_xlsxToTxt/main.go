@@ -60,7 +60,7 @@ func main() {
 			// по столбцу
 			sd := i.Cell(u, m)
 			// и вывести как строку
-			ss, _ := sd.String()
+			ss := sd.String()
 			// Запись
 			saveFile.WriteString(ss)
 			saveFile.WriteString("\n")

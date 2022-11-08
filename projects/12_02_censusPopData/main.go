@@ -1,4 +1,4 @@
-//считывание xlsx и сохрание подсчета в JSON
+//считывание xlsx и сохранение подсчета в JSON
 package main
 
 import (
@@ -70,11 +70,11 @@ func main() {
 		pop := sheet.Cell(u, 3)
 
 		// перевод *Cell  в нормальные значения
-		nameStateStr, err := state.String()
+		nameStateStr := state.String()
 		if err != nil {
 			log.Fatalf("Ошибка nameStateStr %v", err)
 		}
-		countryStr, err := country.String()
+		countryStr := country.String()
 		if err != nil {
 			log.Fatalf("Ошибка countryStr %v", err)
 		}

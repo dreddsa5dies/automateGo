@@ -40,7 +40,10 @@ func readPdf(path string) (string, error) {
 		if p.V.IsNull() {
 			continue
 		}
-		textBuilder.WriteString(p.GetPlainText("\n"))
+		t := p.Content().Text
+		for i := range t {
+			textBuilder.WriteString(t[i].S)
+		}
 	}
 	return textBuilder.String(), nil
 }

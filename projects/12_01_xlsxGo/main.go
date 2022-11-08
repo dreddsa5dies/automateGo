@@ -51,7 +51,7 @@ func main() {
 
 	// получение ячейки
 	y := i.Cell(0, 0)
-	a, _ := y.String()
+	a := y.String()
 	fmt.Println(a)
 
 	// вывод 2 столбца
@@ -62,7 +62,7 @@ func main() {
 		// по 2му столбцу
 		sd := i.Cell(u, 1)
 		// и вывести как строку
-		ss, _ := sd.String()
+		ss := sd.String()
 		fmt.Println(ss)
 	}
 }
