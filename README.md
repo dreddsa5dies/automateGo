@@ -5,7 +5,7 @@
 ## Implementation on Go projects  book "Automate the Boring Stuff with Python: Practical Programming for Total Beginners"
 
 ## Translation
-* [English](https://github.com/dreddsa5dies/automateGo/tree/master/README_en.md)
+* [English](https://github.com/dreddsa5dies/automateGo/tree/master/README.md)
 * [Russian](https://github.com/dreddsa5dies/automateGo/tree/master/README_rus.md)
 
 ## Install

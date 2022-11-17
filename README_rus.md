@@ -6,7 +6,7 @@
 
 ##Перевод:
 * [Russian](https://github.com/dreddsa5dies/automateGo/tree/master/README_rus.md)
-* [English](https://github.com/dreddsa5dies/automateGo/tree/master/README_en.md)
+* [English](https://github.com/dreddsa5dies/automateGo/tree/master/README.md)
 
 ## Install
 Use [go mod](https://go.dev/ref/mod)  
