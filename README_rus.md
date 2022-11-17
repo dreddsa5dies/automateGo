@@ -5,8 +5,8 @@
 ## Implementation on Go projects  book "Automate the Boring Stuff with Python: Practical Programming for Total Beginners"
 
 ##Перевод:
-* [Russian](https://github.com/dreddsa5dies/automateGo/tree/master/README_rus.md)
-* [English](https://github.com/dreddsa5dies/automateGo/tree/master/README.md)
+* [Russian](README_rus.md)
+* [English](README.md)
 
 ## Install
 Use [go mod](https://go.dev/ref/mod)  
