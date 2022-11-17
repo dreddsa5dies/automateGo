@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 17 "Работа с изображениями"
-Учебный проект на странице 511  
-resizeAndAddLogo - Изменяет размеры всех изображений в указанном каталоге таким образом, чтобы они вписывались в квадрат с размерами 300х300, и добавляет изображение catlogo.png в его нижний правый угол.
+## Go implementation of Part II projects
+### Chapter 17 "Image manipulation"
+Study project on page 511
+resizeAndAddLogo - Resizes all images in the specified directory to fit into a 300x300 square and adds the catlogo.png image to its bottom right corner.

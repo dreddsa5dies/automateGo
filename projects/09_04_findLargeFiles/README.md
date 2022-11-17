@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 9 "Управление файлами"
-Учебный проект на странице 274  
-Поиск исключительно больших файлов (> 100 MB).
+## Go implementation of Part II projects
+### Chapter 9 "File Management"
+Study project on page 274
+Search for exceptionally large files (> 100 MB).

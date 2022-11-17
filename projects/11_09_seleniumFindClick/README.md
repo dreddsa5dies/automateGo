@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 11 "Автоматический сбор данных в интернете"
-Учебный проект на странице 331  
-Управление браузером с помощью Selenium
+## Go implementation of Part II projects
+### Chapter 11 "Automated Web Data Collection"
+Study project on page 331
+Browser control with Selenium

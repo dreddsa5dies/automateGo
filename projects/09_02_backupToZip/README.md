@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 9 "Управление файлами"
-Учебный проект на страницах 269-272  
-Копирует папку вместе со всем содержимым в zip-файл с инкреминтируемым номером копии в имени файла
+## Go implementation of Part II projects
+### Chapter 9 "File Management"
+Study project on pages 269-272
+Copies a folder, along with all its contents, into a zip file with an incremental copy number in the file name

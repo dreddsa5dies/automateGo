@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 9 "Управление файлами"
-Учебный проект на странице 274  
-Выборочное копирование: обход дерева каталогов с целью отбора файлов с заданным расширением, копирование в новую папку.
+## Go implementation of Part II projects
+### Chapter 9 "File Management"
+Study project on page 274
+Selective copying: traversing the directory tree in order to select files with a given extension, copying to a new folder.

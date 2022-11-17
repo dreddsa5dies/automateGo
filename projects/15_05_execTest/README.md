@@ -1,3 +1,3 @@
-## Реализация на Go проектов части II
-### Глава 15 "Обработка значений даты и времени, планировщик заданий и запуск программ"
-Тестовое exec
+## Go implementation of Part II projects
+### Chapter 15 "Handling dates and times, the task scheduler, and running programs"
+test exec

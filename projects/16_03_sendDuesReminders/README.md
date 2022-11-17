@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 16 "Отправка сообщений электронной почты и текстовых сообщений"
-Учебный проект на странице 475  
-sendDuesReminders - Рассылает сообщения на основании сведений из электронной таблицы об уплате взносов.
+## Go implementation of Part II projects
+### Chapter 16 "Sending Email and Text Messages"
+Study project on page 475
+sendDuesReminders - Sends out messages based on dues spreadsheet information.

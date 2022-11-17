@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 7 "Поиск по шаблону с помощью регулярных выражений"
-Учебный проект на страницах 214-219  
-Поиск email по регулярному выражению
+## Go implementation of Part II projects
+### Chapter 7 "Pattern Search with Regular Expressions"
+Study project on pages 214-219
+Search email by regular expression

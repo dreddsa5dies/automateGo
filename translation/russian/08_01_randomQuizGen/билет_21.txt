@@ -1,0 +1,308 @@
+ФИО:
+
+Группа:
+
+Дата:
+
+                    Билет 21
+
+1 Выберите столицу штата Hawaii
+A. Carson City
+B. Honolulu
+C. Jefferson City
+D. Olympia
+
+2 Выберите столицу штата Pennsylvania
+A. Olympia
+B. Harrisburg
+C. Jefferson City
+D. Carson City
+
+3 Выберите столицу штата Florida
+A. Carson City
+B. Olympia
+C. Jefferson City
+D. Tallahassee
+
+4 Выберите столицу штата Arkansas
+A. Olympia
+B. Littl Rock
+C. Jefferson City
+D. Carson City
+
+5 Выберите столицу штата Vermont
+A. Jefferson City
+B. Montpelier
+C. Carson City
+D. Olympia
+
+6 Выберите столицу штата Minnesota
+A. Carson City
+B. Olympia
+C. Saint Paul
+D. Jefferson City
+
+7 Выберите столицу штата Ohio
+A. Columbus
+B. Jefferson City
+C. Carson City
+D. Olympia
+
+8 Выберите столицу штата New York
+A. Albany
+B. Carson City
+C. Olympia
+D. Jefferson City
+
+9 Выберите столицу штата Oklahoma
+A. Olympia
+B. Oklahoma City
+C. Carson City
+D. Jefferson City
+
+10 Выберите столицу штата Utah
+A. Olympia
+B. Salt Lake City
+C. Jefferson City
+D. Carson City
+
+11 Выберите столицу штата Oregon
+A. Jefferson City
+B. Olympia
+C. Salem
+D. Carson City
+
+12 Выберите столицу штата South Dakota
+A. Pierre
+B. Jefferson City
+C. Olympia
+D. Carson City
+
+13 Выберите столицу штата North Dakota
+A. Olympia
+B. Carson City
+C. Bismarck
+D. Jefferson City
+
+14 Выберите столицу штата Idaho
+A. Olympia
+B. Jefferson City
+C. Boise
+D. Carson City
+
+15 Выберите столицу штата Alabama
+A. Montgomery
+B. Jefferson City
+C. Carson City
+D. Olympia
+
+16 Выберите столицу штата Alaska
+A. Jefferson City
+B. Carson City
+C. Olympia
+D. Juneau
+
+17 Выберите столицу штата Indiana
+A. Indianapolis
+B. Jefferson City
+C. Olympia
+D. Carson City
+
+18 Выберите столицу штата New Mexico
+A. Olympia
+B. Carson City
+C. Santa Fe
+D. Jefferson City
+
+19 Выберите столицу штата Mississippi
+A. Jackson
+B. Jefferson City
+C. Carson City
+D. Olympia
+
+20 Выберите столицу штата Kansas
+A. Jefferson City
+B. Olympia
+C. Carson City
+D. Topeka
+
+21 Выберите столицу штата Tennessee
+A. Carson City
+B. Nashville
+C. Olympia
+D. Jefferson City
+
+22 Выберите столицу штата Washington
+A. Jefferson City
+B. Carson City
+C. Olympia
+D. Richmond
+
+23 Выберите столицу штата Missouri
+A. Carson City
+B. Jefferson City
+C. Richmond
+D. Olympia
+
+24 Выберите столицу штата Maine
+A. Augusta
+B. Olympia
+C. Jefferson City
+D. Carson City
+
+25 Выберите столицу штата Texas
+A. Jefferson City
+B. Carson City
+C. Austin
+D. Olympia
+
+26 Выберите столицу штата Wyoming
+A. Cheyenne
+B. Jefferson City
+C. Olympia
+D. Carson City
+
+27 Выберите столицу штата Delaware
+A. Olympia
+B. Dover
+C. Jefferson City
+D. Carson City
+
+28 Выберите столицу штата Illinois
+A. Olympia
+B. Carson City
+C. Jefferson City
+D. Springfield
+
+29 Выберите столицу штата Massachusetts
+A. Olympia
+B. Carson City
+C. Boston
+D. Jefferson City
+
+30 Выберите столицу штата Connecticut
+A. Olympia
+B. Carson City
+C. Jefferson City
+D. Hartford
+
+31 Выберите столицу штата West Virginia
+A. Jefferson City
+B. Charleston
+C. Carson City
+D. Olympia
+
+32 Выберите столицу штата South Carolina
+A. Carson City
+B. Jefferson City
+C. Olympia
+D. Columbia
+
+33 Выберите столицу штата Iowa
+A. Carson City
+B. Olympia
+C. Des Moines
+D. Jefferson City
+
+34 Выберите столицу штата Wisconsin
+A. Madison
+B. Jefferson City
+C. Carson City
+D. Olympia
+
+35 Выберите столицу штата Virginia
+A. Richmond
+B. Olympia
+C. Jefferson City
+D. Carson City
+
+36 Выберите столицу штата Rhode Island
+A. Jefferson City
+B. Olympia
+C. Providence
+D. Carson City
+
+37 Выберите столицу штата Kentucky
+A. Frankfort
+B. Carson City
+C. Olympia
+D. Jefferson City
+
+38 Выберите столицу штата California
+A. Sacramento
+B. Carson City
+C. Olympia
+D. Jefferson City
+
+39 Выберите столицу штата Nebraska
+A. Carson City
+B. Lincoln
+C. Olympia
+D. Jefferson City
+
+40 Выберите столицу штата New Jersey
+A. Trenton
+B. Carson City
+C. Olympia
+D. Jefferson City
+
+41 Выберите столицу штата Arizona
+A. Phoenix
+B. Jefferson City
+C. Olympia
+D. Carson City
+
+42 Выберите столицу штата Colorado
+A. Jefferson City
+B. Carson City
+C. Olympia
+D. Denver
+
+43 Выберите столицу штата Montana
+A. Carson City
+B. Helena
+C. Olympia
+D. Jefferson City
+
+44 Выберите столицу штата Maryland
+A. Carson City
+B. Olympia
+C. Annapolis
+D. Jefferson City
+
+45 Выберите столицу штата Nevada
+A. Carson City
+B. Richmond
+C. Olympia
+D. Jefferson City
+
+46 Выберите столицу штата New Hampshire
+A. Concord
+B. Jefferson City
+C. Olympia
+D. Carson City
+
+47 Выберите столицу штата Michigan
+A. Olympia
+B. Lansing
+C. Jefferson City
+D. Carson City
+
+48 Выберите столицу штата Georgia
+A. Atlanta
+B. Jefferson City
+C. Olympia
+D. Carson City
+
+49 Выберите столицу штата North Carolina
+A. Jefferson City
+B. Olympia
+C. Raleigh
+D. Carson City
+
+50 Выберите столицу штата Louisiana
+A. Baton Rouge
+B. Jefferson City
+C. Olympia
+D. Carson City
+

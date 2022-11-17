@@ -1,3 +1,3 @@
-## Реализация на Go проектов части II
-### Глава 14 "Работа с CSV-файлами и данными в формате JSON"
-Тестовое декодирование формата JSON
+## Go implementation of Part II projects
+### Chapter 14 "Working with CSV Files and JSON Data"
+Test decoding of JSON format

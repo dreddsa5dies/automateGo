@@ -1,3 +1,3 @@
-## Реализация на Go проектов части II
-### Глава 17 "Работа с изображениями"
-Тестовое IMAGE
+## Go implementation of Part II projects
+### Chapter 17 "Image manipulation"
+Test IMAGE

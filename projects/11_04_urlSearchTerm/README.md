@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 11 "Автоматический сбор данных в интернете"
-Учебный проект на странице 304  
-Поиск url на сайтах в терминале
+## Go implementation of Part II projects
+### Chapter 11 "Automated Web Data Collection"
+Study project on page 304
+Search url on sites in the terminal

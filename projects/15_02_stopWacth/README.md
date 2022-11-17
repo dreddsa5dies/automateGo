@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 15 "Обработка значений даты и времени, планировщик заданий и запуск программ"
-Учебный проект на странице 427  
-stopwatch - простая программа-хронометр
+## Go implementation of Part II projects
+### Chapter 15 "Handling dates and times, the task scheduler, and running programs"
+Study project on page 427
+stopwatch - simple timer program

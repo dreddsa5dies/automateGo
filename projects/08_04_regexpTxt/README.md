@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 8 "Чтение и запись файлов"
-Учебный проект на странице 251  
-Поиск в *.txt по регулярному выражению
+## Go implementation of Part II projects
+### Chapter 8 "Reading and Writing Files"
+Study project on page 251
+Search in *.txt by regular expression

@@ -1,3 +1,3 @@
-## Реализация на Go проектов части II
-### Глава 16 "Отправка сообщений электронной почты и текстовых сообщений"
-Тестовое SMTP, IMAP
+## Go implementation of Part II projects
+### Chapter 16 "Sending Email and Text Messages"
+Test SMTP, IMAP

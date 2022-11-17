@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 12 "Работа с электронными таблицами Exсel"
-Учебный проект на странице 372  
-xlsxToTxt - программа перевода *.xlsx в txt файлы 
+## Go implementation of Part II projects
+### Chapter 12 "Working with Excel Spreadsheets"
+Study project on page 372
+xlsxToTxt - program to convert *.xlsx to txt files

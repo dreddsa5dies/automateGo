@@ -1,0 +1,987 @@
+2017/04/11 10:13:55 Открытие JSON файла: resp.json
+is an object:
+cod is string 200
+message is float64 0.0032
+cnt is float64 36
+list is array:
+0 is an object:
+dt_txt is string 2017-02-16 12:00:00
+dt is float64 1.4872464e+09
+main is an object:
+pressure is float64 972.73
+sea_level is float64 1046.46
+grnd_level is float64 972.73
+humidity is float64 75
+temp_kf is float64 5.11
+temp is float64 286.67
+temp_min is float64 281.556
+temp_max is float64 286.67
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 01d
+clouds is an object:
+all is float64 0
+wind is an object:
+speed is float64 1.81
+deg is float64 247.501
+sys is an object:
+pod is string d
+1 is an object:
+dt is float64 1.4872572e+09
+main is an object:
+temp_min is float64 281.821
+temp_max is float64 285.66
+pressure is float64 970.91
+sea_level is float64 1044.32
+grnd_level is float64 970.91
+humidity is float64 70
+temp_kf is float64 3.84
+temp is float64 285.66
+weather is array:
+0 is an object:
+description is string clear sky
+icon is string 01d
+id is float64 800
+main is string Clear
+clouds is an object:
+all is float64 0
+wind is an object:
+speed is float64 1.59
+deg is float64 290.501
+sys is an object:
+pod is string d
+dt_txt is string 2017-02-16 15:00:00
+2 is an object:
+wind is an object:
+speed is float64 1.41
+deg is float64 263.5
+sys is an object:
+pod is string n
+dt_txt is string 2017-02-16 18:00:00
+dt is float64 1.487268e+09
+main is an object:
+pressure is float64 970.44
+sea_level is float64 1044.7
+grnd_level is float64 970.44
+humidity is float64 90
+temp_kf is float64 2.56
+temp is float64 277.05
+temp_min is float64 274.498
+temp_max is float64 277.05
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 01n
+clouds is an object:
+all is float64 0
+3 is an object:
+dt is float64 1.4872788e+09
+main is an object:
+temp is float64 272.78
+temp_min is float64 271.503
+temp_max is float64 272.78
+pressure is float64 969.32
+sea_level is float64 1044.14
+grnd_level is float64 969.32
+humidity is float64 80
+temp_kf is float64 1.28
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 01n
+clouds is an object:
+all is float64 0
+wind is an object:
+speed is float64 2.24
+deg is float64 205.502
+sys is an object:
+pod is string n
+dt_txt is string 2017-02-16 21:00:00
+4 is an object:
+weather is array:
+0 is an object:
+icon is string 04n
+id is float64 803
+main is string Clouds
+description is string broken clouds
+clouds is an object:
+all is float64 76
+wind is an object:
+speed is float64 3.59
+deg is float64 224.003
+sys is an object:
+pod is string n
+dt_txt is string 2017-02-17 00:00:00
+dt is float64 1.4872896e+09
+main is an object:
+sea_level is float64 1042.96
+grnd_level is float64 968.14
+humidity is float64 85
+temp_kf is float64 0
+temp is float64 273.341
+temp_min is float64 273.341
+temp_max is float64 273.341
+pressure is float64 968.14
+5 is an object:
+dt is float64 1.4873004e+09
+main is an object:
+temp_kf is float64 0
+temp is float64 275.568
+temp_min is float64 275.568
+temp_max is float64 275.568
+pressure is float64 966.6
+sea_level is float64 1041.39
+grnd_level is float64 966.6
+humidity is float64 89
+weather is array:
+0 is an object:
+main is string Rain
+description is string light rain
+icon is string 10n
+id is float64 500
+clouds is an object:
+all is float64 76
+wind is an object:
+speed is float64 3.77
+deg is float64 237.002
+rain is an object:
+3h is float64 0.32
+sys is an object:
+pod is string n
+dt_txt is string 2017-02-17 03:00:00
+6 is an object:
+dt is float64 1.4873112e+09
+main is an object:
+temp is float64 276.478
+temp_min is float64 276.478
+temp_max is float64 276.478
+pressure is float64 966.45
+sea_level is float64 1041.21
+grnd_level is float64 966.45
+humidity is float64 97
+temp_kf is float64 0
+weather is array:
+0 is an object:
+id is float64 501
+main is string Rain
+description is string moderate rain
+icon is string 10n
+clouds is an object:
+all is float64 92
+wind is an object:
+speed is float64 3.81
+deg is float64 268.005
+rain is an object:
+3h is float64 4.9
+sys is an object:
+pod is string n
+dt_txt is string 2017-02-17 06:00:00
+7 is an object:
+sys is an object:
+pod is string d
+dt_txt is string 2017-02-17 09:00:00
+dt is float64 1.487322e+09
+main is an object:
+temp_min is float64 276.67
+temp_max is float64 276.67
+pressure is float64 967.41
+sea_level is float64 1041.95
+grnd_level is float64 967.41
+humidity is float64 100
+temp_kf is float64 0
+temp is float64 276.67
+weather is array:
+0 is an object:
+description is string light rain
+icon is string 10d
+id is float64 500
+main is string Rain
+clouds is an object:
+all is float64 64
+wind is an object:
+speed is float64 2.6
+deg is float64 266.504
+rain is an object:
+3h is float64 1.37
+8 is an object:
+main is an object:
+grnd_level is float64 966.98
+humidity is float64 95
+temp_kf is float64 0
+temp is float64 278.253
+temp_min is float64 278.253
+temp_max is float64 278.253
+pressure is float64 966.98
+sea_level is float64 1040.89
+weather is array:
+0 is an object:
+id is float64 500
+main is string Rain
+description is string light rain
+icon is string 10d
+clouds is an object:
+all is float64 92
+wind is an object:
+speed is float64 3.17
+deg is float64 261.501
+rain is an object:
+3h is float64 0.12
+sys is an object:
+pod is string d
+dt_txt is string 2017-02-17 12:00:00
+dt is float64 1.4873328e+09
+9 is an object:
+wind is an object:
+speed is float64 3.21
+deg is float64 268.001
+rain is an object:
+3h is float64 2.12
+sys is an object:
+pod is string d
+dt_txt is string 2017-02-17 15:00:00
+dt is float64 1.4873436e+09
+main is an object:
+sea_level is float64 1040.17
+grnd_level is float64 966.38
+humidity is float64 99
+temp_kf is float64 0
+temp is float64 276.455
+temp_min is float64 276.455
+temp_max is float64 276.455
+pressure is float64 966.38
+weather is array:
+0 is an object:
+id is float64 500
+main is string Rain
+description is string light rain
+icon is string 10d
+clouds is an object:
+all is float64 92
+10 is an object:
+dt_txt is string 2017-02-17 18:00:00
+dt is float64 1.4873544e+09
+weather is array:
+0 is an object:
+id is float64 500
+main is string Rain
+description is string light rain
+icon is string 10n
+clouds is an object:
+all is float64 88
+wind is an object:
+speed is float64 3.17
+deg is float64 258.001
+rain is an object:
+3h is float64 0.7
+snow is an object:
+3h is float64 0.0775
+sys is an object:
+pod is string n
+main is an object:
+humidity is float64 95
+temp_kf is float64 0
+temp is float64 275.639
+temp_min is float64 275.639
+temp_max is float64 275.639
+pressure is float64 966.39
+sea_level is float64 1040.65
+grnd_level is float64 966.39
+11 is an object:
+weather is array:
+0 is an object:
+id is float64 500
+main is string Rain
+description is string light rain
+icon is string 10n
+clouds is an object:
+all is float64 88
+wind is an object:
+speed is float64 3.71
+deg is float64 265.503
+snow is an object:
+3h is float64 0.075
+dt_txt is string 2017-02-17 21:00:00
+dt is float64 1.4873652e+09
+main is an object:
+humidity is float64 96
+temp_kf is float64 0
+temp is float64 275.459
+temp_min is float64 275.459
+temp_max is float64 275.459
+pressure is float64 966.3
+sea_level is float64 1040.8
+grnd_level is float64 966.3
+rain is an object:
+3h is float64 1.16
+sys is an object:
+pod is string n
+12 is an object:
+dt is float64 1.487376e+09
+main is an object:
+pressure is float64 966.43
+sea_level is float64 1041.02
+grnd_level is float64 966.43
+humidity is float64 99
+temp_kf is float64 0
+temp is float64 275.035
+temp_min is float64 275.035
+temp_max is float64 275.035
+weather is array:
+0 is an object:
+main is string Rain
+description is string light rain
+icon is string 10n
+id is float64 500
+sys is an object:
+pod is string n
+dt_txt is string 2017-02-18 00:00:00
+clouds is an object:
+all is float64 92
+wind is an object:
+speed is float64 3.56
+deg is float64 273.5
+rain is an object:
+3h is float64 1.37
+snow is an object:
+3h is float64 0.1525
+13 is an object:
+wind is an object:
+speed is float64 2.66
+deg is float64 285.502
+rain is an object:
+3h is float64 0.79
+sys is an object:
+pod is string n
+dt is float64 1.4873868e+09
+weather is array:
+0 is an object:
+main is string Rain
+description is string light rain
+icon is string 10n
+id is float64 500
+clouds is an object:
+all is float64 88
+snow is an object:
+3h is float64 0.52
+dt_txt is string 2017-02-18 03:00:00
+main is an object:
+temp_min is float64 274.965
+temp_max is float64 274.965
+pressure is float64 966.36
+sea_level is float64 1041.17
+grnd_level is float64 966.36
+humidity is float64 97
+temp_kf is float64 0
+temp is float64 274.965
+14 is an object:
+weather is array:
+0 is an object:
+id is float64 500
+main is string Rain
+description is string light rain
+icon is string 10n
+snow is an object:
+3h is float64 0.06
+sys is an object:
+pod is string n
+main is an object:
+humidity is float64 98
+temp_kf is float64 0
+temp is float64 274.562
+temp_min is float64 274.562
+temp_max is float64 274.562
+pressure is float64 966.75
+sea_level is float64 1041.57
+grnd_level is float64 966.75
+clouds is an object:
+all is float64 88
+wind is an object:
+deg is float64 276.5
+speed is float64 1.46
+rain is an object:
+3h is float64 0.08
+dt_txt is string 2017-02-18 06:00:00
+dt is float64 1.4873976e+09
+15 is an object:
+dt is float64 1.4874084e+09
+wind is an object:
+deg is float64 251.008
+speed is float64 1.5
+sys is an object:
+pod is string d
+dt_txt is string 2017-02-18 09:00:00
+main is an object:
+sea_level is float64 1041.74
+grnd_level is float64 967.21
+humidity is float64 99
+temp_kf is float64 0
+temp is float64 275.648
+temp_min is float64 275.648
+temp_max is float64 275.648
+pressure is float64 967.21
+weather is array:
+0 is an object:
+id is float64 500
+main is string Rain
+description is string light rain
+icon is string 10d
+clouds is an object:
+all is float64 56
+rain is an object:
+3h is float64 0.02
+snow is an object:
+3h is float64 0.03
+16 is an object:
+main is an object:
+temp_min is float64 277.927
+temp_max is float64 277.927
+pressure is float64 966.06
+sea_level is float64 1039.98
+grnd_level is float64 966.06
+humidity is float64 95
+temp_kf is float64 0
+temp is float64 277.927
+clouds is an object:
+all is float64 8
+rain is an object:
+sys is an object:
+pod is string d
+dt_txt is string 2017-02-18 12:00:00
+dt is float64 1.4874192e+09
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 02d
+wind is an object:
+speed is float64 0.86
+deg is float64 244.004
+snow is an object:
+17 is an object:
+dt_txt is string 2017-02-18 15:00:00
+clouds is an object:
+all is float64 8
+wind is an object:
+speed is float64 1.62
+deg is float64 79.5024
+rain is an object:
+sys is an object:
+pod is string d
+dt is float64 1.48743e+09
+main is an object:
+grnd_level is float64 964.57
+humidity is float64 89
+temp_kf is float64 0
+temp is float64 278.367
+temp_min is float64 278.367
+temp_max is float64 278.367
+pressure is float64 964.57
+sea_level is float64 1038.35
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 02d
+snow is an object:
+18 is an object:
+rain is an object:
+snow is an object:
+dt_txt is string 2017-02-18 18:00:00
+clouds is an object:
+all is float64 0
+wind is an object:
+speed is float64 2.42
+deg is float64 77.0026
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 01n
+sys is an object:
+pod is string n
+dt is float64 1.4874408e+09
+main is an object:
+temp is float64 273.797
+temp_min is float64 273.797
+temp_max is float64 273.797
+pressure is float64 964.13
+sea_level is float64 1038.48
+grnd_level is float64 964.13
+humidity is float64 91
+temp_kf is float64 0
+19 is an object:
+dt is float64 1.4874516e+09
+main is an object:
+temp_min is float64 271.239
+temp_max is float64 271.239
+pressure is float64 963.39
+sea_level is float64 1038.21
+grnd_level is float64 963.39
+humidity is float64 93
+temp_kf is float64 0
+temp is float64 271.239
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 01n
+rain is an object:
+snow is an object:
+sys is an object:
+pod is string n
+clouds is an object:
+all is float64 0
+wind is an object:
+speed is float64 2.42
+deg is float64 95.5017
+dt_txt is string 2017-02-18 21:00:00
+20 is an object:
+snow is an object:
+dt_txt is string 2017-02-19 00:00:00
+wind is an object:
+speed is float64 1.96
+deg is float64 101.004
+main is an object:
+pressure is float64 962.39
+sea_level is float64 1037.44
+grnd_level is float64 962.39
+humidity is float64 92
+temp_kf is float64 0
+temp is float64 269.553
+temp_min is float64 269.553
+temp_max is float64 269.553
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 01n
+clouds is an object:
+all is float64 0
+rain is an object:
+sys is an object:
+pod is string n
+dt is float64 1.4874624e+09
+21 is an object:
+main is an object:
+pressure is float64 961.28
+sea_level is float64 1036.51
+grnd_level is float64 961.28
+humidity is float64 84
+temp_kf is float64 0
+temp is float64 268.198
+temp_min is float64 268.198
+temp_max is float64 268.198
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 01n
+rain is an object:
+snow is an object:
+dt is float64 1.4874732e+09
+wind is an object:
+speed is float64 1.06
+deg is float64 121.5
+sys is an object:
+pod is string n
+dt_txt is string 2017-02-19 03:00:00
+clouds is an object:
+all is float64 0
+22 is an object:
+main is an object:
+grnd_level is float64 961.16
+humidity is float64 86
+temp_kf is float64 0
+temp is float64 267.295
+temp_min is float64 267.295
+temp_max is float64 267.295
+pressure is float64 961.16
+sea_level is float64 1036.45
+snow is an object:
+rain is an object:
+sys is an object:
+pod is string n
+dt_txt is string 2017-02-19 06:00:00
+dt is float64 1.487484e+09
+weather is array:
+0 is an object:
+description is string clear sky
+icon is string 01n
+id is float64 800
+main is string Clear
+clouds is an object:
+all is float64 0
+wind is an object:
+speed is float64 1.17
+deg is float64 155.005
+23 is an object:
+dt is float64 1.4874948e+09
+clouds is an object:
+all is float64 0
+wind is an object:
+speed is float64 1.66
+deg is float64 195.002
+rain is an object:
+main is an object:
+humidity is float64 84
+temp_kf is float64 0
+temp is float64 272.956
+temp_min is float64 272.956
+temp_max is float64 272.956
+pressure is float64 962.03
+sea_level is float64 1036.85
+grnd_level is float64 962.03
+weather is array:
+0 is an object:
+icon is string 01d
+id is float64 800
+main is string Clear
+description is string clear sky
+snow is an object:
+sys is an object:
+pod is string d
+dt_txt is string 2017-02-19 09:00:00
+24 is an object:
+rain is an object:
+snow is an object:
+dt is float64 1.4875056e+09
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 01d
+clouds is an object:
+all is float64 0
+wind is an object:
+speed is float64 1.32
+deg is float64 357.003
+sys is an object:
+pod is string d
+dt_txt is string 2017-02-19 12:00:00
+main is an object:
+temp_kf is float64 0
+temp is float64 277.422
+temp_min is float64 277.422
+temp_max is float64 277.422
+pressure is float64 962.23
+sea_level is float64 1036.06
+grnd_level is float64 962.23
+humidity is float64 89
+25 is an object:
+main is an object:
+sea_level is float64 1035.86
+grnd_level is float64 962.15
+humidity is float64 87
+temp_kf is float64 0
+temp is float64 277.984
+temp_min is float64 277.984
+temp_max is float64 277.984
+pressure is float64 962.15
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 01d
+wind is an object:
+deg is float64 48.5031
+speed is float64 1.58
+snow is an object:
+dt is float64 1.4875164e+09
+clouds is an object:
+all is float64 0
+rain is an object:
+sys is an object:
+pod is string d
+dt_txt is string 2017-02-19 15:00:00
+26 is an object:
+main is an object:
+pressure is float64 963.31
+sea_level is float64 1037.81
+grnd_level is float64 963.31
+humidity is float64 90
+temp_kf is float64 0
+temp is float64 272.459
+temp_min is float64 272.459
+temp_max is float64 272.459
+clouds is an object:
+all is float64 0
+wind is an object:
+speed is float64 1.16
+deg is float64 75.5042
+snow is an object:
+sys is an object:
+pod is string n
+dt_txt is string 2017-02-19 18:00:00
+dt is float64 1.4875272e+09
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 01n
+rain is an object:
+27 is an object:
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 01n
+clouds is an object:
+all is float64 0
+sys is an object:
+pod is string n
+dt_txt is string 2017-02-19 21:00:00
+dt is float64 1.487538e+09
+main is an object:
+grnd_level is float64 964.65
+humidity is float64 83
+temp_kf is float64 0
+temp is float64 269.473
+temp_min is float64 269.473
+temp_max is float64 269.473
+pressure is float64 964.65
+sea_level is float64 1039.76
+wind is an object:
+speed is float64 1.12
+deg is float64 174.002
+rain is an object:
+snow is an object:
+28 is an object:
+wind is an object:
+speed is float64 2.11
+deg is float64 207.502
+snow is an object:
+dt_txt is string 2017-02-20 00:00:00
+sys is an object:
+pod is string n
+dt is float64 1.4875488e+09
+main is an object:
+temp_kf is float64 0
+temp is float64 268.793
+temp_min is float64 268.793
+temp_max is float64 268.793
+pressure is float64 965.92
+sea_level is float64 1041.32
+grnd_level is float64 965.92
+humidity is float64 80
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 01n
+clouds is an object:
+all is float64 0
+rain is an object:
+29 is an object:
+snow is an object:
+dt_txt is string 2017-02-20 03:00:00
+dt is float64 1.4875596e+09
+clouds is an object:
+all is float64 0
+wind is an object:
+speed is float64 1.67
+deg is float64 191.001
+rain is an object:
+main is an object:
+temp_min is float64 268.106
+temp_max is float64 268.106
+pressure is float64 966.4
+sea_level is float64 1042.18
+grnd_level is float64 966.4
+humidity is float64 85
+temp_kf is float64 0
+temp is float64 268.106
+weather is array:
+0 is an object:
+description is string clear sky
+icon is string 01n
+id is float64 800
+main is string Clear
+sys is an object:
+pod is string n
+30 is an object:
+rain is an object:
+snow is an object:
+sys is an object:
+pod is string n
+dt_txt is string 2017-02-20 06:00:00
+dt is float64 1.4875704e+09
+main is an object:
+humidity is float64 84
+temp_kf is float64 0
+temp is float64 267.655
+temp_min is float64 267.655
+temp_max is float64 267.655
+pressure is float64 967.4
+sea_level is float64 1043.43
+grnd_level is float64 967.4
+weather is array:
+0 is an object:
+icon is string 01n
+id is float64 800
+main is string Clear
+description is string clear sky
+clouds is an object:
+all is float64 0
+wind is an object:
+speed is float64 1.61
+deg is float64 194.001
+31 is an object:
+wind is an object:
+speed is float64 2.49
+deg is float64 208.5
+rain is an object:
+main is an object:
+grnd_level is float64 968.84
+humidity is float64 83
+temp_kf is float64 0
+temp is float64 273.75
+temp_min is float64 273.75
+temp_max is float64 273.75
+pressure is float64 968.84
+sea_level is float64 1044.23
+clouds is an object:
+all is float64 0
+snow is an object:
+sys is an object:
+pod is string d
+dt_txt is string 2017-02-20 09:00:00
+dt is float64 1.4875812e+09
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 01d
+32 is an object:
+dt is float64 1.487592e+09
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 01d
+rain is an object:
+snow is an object:
+dt_txt is string 2017-02-20 12:00:00
+main is an object:
+temp_min is float64 279.302
+temp_max is float64 279.302
+pressure is float64 968.37
+sea_level is float64 1042.52
+grnd_level is float64 968.37
+humidity is float64 83
+temp_kf is float64 0
+temp is float64 279.302
+clouds is an object:
+all is float64 0
+wind is an object:
+speed is float64 2.46
+deg is float64 252.001
+sys is an object:
+pod is string d
+33 is an object:
+dt is float64 1.4876028e+09
+main is an object:
+temp_kf is float64 0
+temp is float64 279.343
+temp_min is float64 279.343
+temp_max is float64 279.343
+pressure is float64 967.9
+sea_level is float64 1041.64
+grnd_level is float64 967.9
+humidity is float64 81
+weather is array:
+0 is an object:
+id is float64 800
+main is string Clear
+description is string clear sky
+icon is string 01d
+wind is an object:
+speed is float64 3.21
+deg is float64 268.001
+sys is an object:
+pod is string d
+clouds is an object:
+all is float64 0
+rain is an object:
+snow is an object:
+dt_txt is string 2017-02-20 15:00:00
+34 is an object:
+weather is array:
+0 is an object:
+id is float64 801
+main is string Clouds
+description is string few clouds
+icon is string 02n
+snow is an object:
+sys is an object:
+pod is string n
+dt is float64 1.4876136e+09
+main is an object:
+grnd_level is float64 968.19
+humidity is float64 88
+temp_kf is float64 0
+temp is float64 274.443
+temp_min is float64 274.443
+temp_max is float64 274.443
+pressure is float64 968.19
+sea_level is float64 1042.66
+rain is an object:
+dt_txt is string 2017-02-20 18:00:00
+clouds is an object:
+all is float64 24
+wind is an object:
+speed is float64 3.27
+deg is float64 257.501
+35 is an object:
+dt is float64 1.4876244e+09
+main is an object:
+temp is float64 272.424
+temp_min is float64 272.424
+temp_max is float64 272.424
+pressure is float64 968.38
+sea_level is float64 1043.17
+grnd_level is float64 968.38
+humidity is float64 85
+temp_kf is float64 0
+rain is an object:
+dt_txt is string 2017-02-20 21:00:00
+sys is an object:
+pod is string n
+weather is array:
+0 is an object:
+id is float64 801
+main is string Clouds
+description is string few clouds
+icon is string 02n
+clouds is an object:
+all is float64 20
+wind is an object:
+speed is float64 3.57
+deg is float64 255.503
+snow is an object:
+city is an object:
+name is string Altstadt
+coord is an object:
+lat is float64 48.137
+lon is float64 11.5752
+country is string none
+id is float64 6.940463e+06

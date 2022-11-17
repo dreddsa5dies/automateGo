@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 12 "Работа с электронными таблицами Exсel"
-Учебный проект на странице 345  
-readCensusExcel - формирует таблицу данных о численности населения и количестве переписных районов в каждом округе
+## Go implementation of Part II projects
+### Chapter 12 "Working with Excel Spreadsheets"
+Study project on page 345
+readCensusExcel - Generates a table of population and number of census areas in each county

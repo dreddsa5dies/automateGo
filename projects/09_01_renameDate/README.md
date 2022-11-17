@@ -1,4 +1,5 @@
-## Реализация на Go проектов части II
-### Глава 9 "Управление файлами"
-Учебный проект на страницах 264-269  
-Программа переименовывает файлы, имена которых включают даты, указанные в американском формате (ММ-ДД-ГГГГ), приводя в соответствие с европейским форматом дат (ДД-ММ-ГГГГ)
+## Go implementation of Part II projects
+### Chapter 9 "File Management"
+Study project on pages 264-269
+The program renames files whose names include dates specified in the American format (MM-DD-YYYY) to match the European date format (DD-MM-YYYY)
+
