@@ -6,7 +6,7 @@
 
 ## Translation
 * [English](README.md)
-* [Russian](translation/russian/README.md)
+* [Русский](translation/russian/README.md)
 
 ## Install
 Use [go mod](https://go.dev/ref/mod)  

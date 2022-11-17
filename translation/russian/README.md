@@ -1,11 +1,11 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/dreddsa5dies/automateGo)](https://goreportcard.com/report/github.com/dreddsa5dies/automateGo) ![License](https://img.shields.io/badge/License-MIT-blue.svg)  
 
-![IMAGE](img/automateGo.png)  
+![IMAGE](https://github.com/dreddsa5dies/automateGo/raw/master/img/automateGo.png)  
 
 ## Implementation on Go projects  book "Automate the Boring Stuff with Python: Practical Programming for Total Beginners"
 
-##Перевод:
-* [Russian]
+## Перевод:
+* [Russian](README.md)
 
 
 ## Install
