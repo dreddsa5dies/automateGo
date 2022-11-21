@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 11 "Автоматический сбор данных в интернете"
-Учебный проект на странице 300  
-Работа с Google Maps
+## Go implementation of Part II projects
+### Chapter 11 "Automated Web Data Collection"
+Study project on page 300
+Working with Google Maps

@@ -1,8 +1,8 @@
-## Реализация на Go проектов части II
-### Глава 8 "Чтение и запись файлов"
-Учебный проект на страницах 250-251  
-замена ключевых слов  
-ADJECTIVE - прилагательное  
-NOUN - существительное  
-VERB - глагол  
-NOUN - наречие
+## Go implementation of Part II projects
+### Chapter 8 "Reading and Writing Files"
+Study project on pages 250-251
+keyword replacement
+ADJECTIVE - adjective
+NOUN - noun
+VERB - verb
+NOUN - adverb

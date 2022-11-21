@@ -1,0 +1,2 @@
+2017/02/25 21:40:56 Post http://127.0.0.1:4444/wd/hub/session: dial tcp 127.0.0.1:4444: getsockopt: connection refused
+2017/02/25 21:43:03 unknown error: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases

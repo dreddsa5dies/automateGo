@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 12 "Работа с электронными таблицами Exсel"
-Учебный проект на странице 354  
-updateProduce - корректирует цены в электронной таблице данных об объемах продаж
+## Go implementation of Part II projects
+### Chapter 12 "Working with Excel Spreadsheets"
+Study project on page 354
+updateProduce - updates prices in the sales data spreadsheet

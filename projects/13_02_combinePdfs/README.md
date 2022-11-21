@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 13 "Работа с документами в форматах PDF и Word"
-Учебный проект на странице 382  
-combinePdfs - программа объединения всех PDF файлов в единый PDF файл
+## Go implementation of Part II projects
+### Chapter 13 "Working with PDF and Word Documents"
+Study project on page 382
+combinePdfs - a program to combine all PDF files into a single PDF file

@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 7 "Поиск по шаблону с помощью регулярных выражений"
-Учебный проект на страницах 222  
-Проверка пароля
+## Go implementation of Part II projects
+### Chapter 7 "Pattern Search with Regular Expressions"
+Study project on 222 pages
+Password check

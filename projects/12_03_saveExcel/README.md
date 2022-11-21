@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 12 "Работа с электронными таблицами Exсel"
-Учебный проект на странице 351  
-saveExсel - запись данных в формате xlsx
+## Go implementation of Part II projects
+### Chapter 12 "Working with Excel Spreadsheets"
+Study project on page 351
+saveExсel - write data in xlsx format

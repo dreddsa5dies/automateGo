@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 11 "Автоматический сбор данных в интернете"
-Самостоятельный учебный проект  
-Получение широты и долготы с помощью Yandex
+## Go implementation of Part II projects
+### Chapter 11 "Automated Web Data Collection"
+Self-study project
+Getting latitude and longitude using Yandex

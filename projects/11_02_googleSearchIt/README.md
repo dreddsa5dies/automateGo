@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 11 "Автоматический сбор данных в интернете"
-Учебный проект на странице 303  
-Работа с Google Search - аналогичная программа
+## Go implementation of Part II projects
+### Chapter 11 "Automated Web Data Collection"
+Study project on page 303
+Working with Google Search - a similar program

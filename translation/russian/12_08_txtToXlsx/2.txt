@@ -1,0 +1,5 @@
+AAAAAA
+BBBBBB
+CCCCCC
+DDDDDD
+This my manifest

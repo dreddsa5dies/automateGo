@@ -1,3 +1,3 @@
-## Реализация на Go проектов части II
-### Глава 13 "Работа с документами в форматах PDF и Word"
-Тест пакетов работы с docx
+## Go implementation of Part II projects
+### Chapter 13 "Working with PDF and Word Documents"
+Test packages for working with docx

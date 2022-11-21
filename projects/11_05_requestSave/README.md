@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 11 "Автоматический сбор данных в интернете"
-Учебный проект на странице 306  
-Запрос страниц интернета и сохранение в файле
+## Go implementation of Part II projects
+### Chapter 11 "Automated Web Data Collection"
+Study project on page 306
+Requesting web pages and saving to a file

@@ -1,6 +1,6 @@
-## Реализация на Go проектов части II
-### Глава 12 "Работа с электронными таблицами Exсel"
-Учебный проект на странице 341  
-Чтение данных электронной таблицы  
-github.com/Luxurioust/excelize проще, но не нашел форму работы с датой - некорректный вывод  
-github.com/tealeg/xlsx вперед!!
+## Go implementation of Part II projects
+### Chapter 12 "Working with Excel Spreadsheets"
+Study project on page 341
+Reading Spreadsheet Data
+github.com/Luxurioust/excelize is simpler, but didn't find the form for working with date - incorrect output
+github.com/tealeg/xlsx go!!

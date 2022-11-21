@@ -1,4 +1,4 @@
-## Реализация на Go проектов части II
-### Глава 15 "Обработка значений даты и времени, планировщик заданий и запуск программ"
-Учебный проект на странице 441  
-multidownloadXkcd - Загружает комиксы XKCD с использованием горутин.
+## Go implementation of Part II projects
+### Chapter 15 "Handling dates and times, the task scheduler, and running programs"
+Study project on page 441
+multidownloadXkcd - Downloads XKCD comics using goroutines.

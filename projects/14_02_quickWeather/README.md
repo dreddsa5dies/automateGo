@@ -1,5 +1,5 @@
-## Реализация на Go проектов части II
-### Глава 14 "Работа с CSV-файлами и данными в формате JSON"
-Учебный проект на странице 417  
-quickWeather - выводит прогноз погоды для заданного населенного пункта  
-Для этого надо на Go заморочится с описанием структуры JSON, что показано в слдующем примере, а сейчас встречайте INTERFACE
+## Go implementation of Part II projects
+### Chapter 14 "Working with CSV Files and JSON Data"
+Study project on page 417
+quickWeather - Displays the weather forecast for a given location
+To do this, you need to get confused on Go with a description of the JSON structure, which is shown in the following example, but now meet INTERFACE
